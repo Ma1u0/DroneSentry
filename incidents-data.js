@@ -1591,8 +1591,8 @@ const incidentsData = [
 
    
   {
-    lat: 55.533,
-    lng: 26.091,
+    lat: 54.7752,
+    lng: 24.1991,
     type: 'drone',      // used for filtering
     risk: 'yellow',
     place: 'others',
