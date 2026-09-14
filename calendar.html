@@ -16,7 +16,6 @@
 #calendar-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   padding: 48px 24px 80px;
   gap: 36px;
   margin-left: 0;
@@ -133,25 +132,10 @@
 
 /* INCIDENT DISPLAY */
 #incident-display {
-  display: none;
   width: 320px;
   margin-top: 0;
   font-size: 14.5px;
   color: var(--ink-soft);
-}
-
-#incident-display.visible {
-  display: block;
-}
-
-.incident-date-heading {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
 }
 
 .incident-item {
@@ -299,6 +283,10 @@
       <a href="changelog.html"><span class="nav-icon">◷</span> Changelog</a>
       <a href="info.html"><span class="nav-icon">ⓘ</span> Info</a>
     </nav>
+    <a class="sidebar-social" href="https://x.com/hyboundry" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      <span>@hyboundry</span>
+    </a>
   </div>
 </div>
 <div id="sidebar-handle">&#9776;</div>
@@ -1307,6 +1295,9 @@ const incidentsData = {
       details: "Air traffic was halted due to balloons moving in he direction of Vilnius Airport <br> The report by the airport called this attack a 'hybrid attack by Belarus' ",
       link: "https://www.vilnius-airport.lt/en/news/temporary-disruptions-at-vilnius-airport-resolved ",
     },
+  ],
+  
+  '2025-12-04': [
     {
       country: "🟡 Île Longue, France 🇫🇷 ",
       popupType: "Drone sighting ",
@@ -2183,7 +2174,6 @@ const yearSelect = document.getElementById('yearSelect');
 const czechNote = document.getElementById('czech-note');
 
 const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-const weekdayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 let currentDate = new Date(2025,8,1);
 
 months.forEach((m,i)=>{
@@ -2248,16 +2238,11 @@ function renderCalendar(){
     }
 
     el.onclick=()=>{
-      incidentDisplay.classList.add('visible');
-
-      const clickedDate = new Date(y, m, d);
-      const dateHeading = `<div class="incident-date-heading">${weekdayNames[clickedDate.getDay()]}, ${months[m]} ${d}, ${y}</div>`;
-
       if(!incidents){
-        incidentDisplay.innerHTML = dateHeading + '<i>No incidents</i>';
+        incidentDisplay.innerHTML='<i>No incidents</i>';
         return;
       }
-      incidentDisplay.innerHTML = dateHeading + incidents.map(i=>`
+      incidentDisplay.innerHTML=incidents.map(i=>`
         <div class="incident-item">
           <b>${i.country} (<a href="${i.link}" target="_blank">source</a>)</b>
           <span class="incident-meta-label">Date</span> ${i.date}<br>
