@@ -2473,7 +2473,7 @@ place: 'others',
     risk: 'Orange',
     place: 'others',
     year: '2026',
-     month: '07',
+     month: '['04', '05', '09'],',
   country: "​​Sulina / Sulina–Chilia area, Romania 🇷🇴",
 
   incidents: [
@@ -2488,6 +2488,12 @@ place: 'others',
       date: ' 27 Jul 2026, 08:53',
       details: "A drone entered Romanian territoriy through Ukraine forcing Romania to scramble jets. The drone returned into Ukrainian airspace shortly after entering Romania. <br><br> Romania expelled a Russian diplomat following the drone incidents on four consecutive days. ",
       link: "https://www.romaniajournal.ro/society-people/new-drone-enters-romanian-airspace-returns-to-ukraine/",
+     },
+   {
+      popupType: 'Crash site',
+      date: ' 11 Sep 2026, 13:30',
+      details: "Drone debris was found between Sulina and Sfântu Gheorghe. The drone was not armed with explosives",
+      link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
      },
   ]
 },
@@ -2751,6 +2757,52 @@ place: 'others',
     link: "https://www.digi24.ro/stiri/botosani-mesaj-ro-alert-pentru-populatie-privind-o-posibila-incursiune-de-drone-3945285",
     country: "Botoșanița Mare, Romania 🇷🇴",
   },
+
+      {
+    lat: 44.736389,
+    lng: 29.035556,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '11 Sep 2026, 9:30',
+    details:  "Around 09:30 border guards notified the army that two drones were found on the beach. At 15:18 secret forces arrived to the scene and defused one of the drones which was equipped with explosives.",
+    link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
+    country: "Periteașca, Romania 🇷🇴",
+  },
+
+   
+   {
+    lat: 44.260412,
+    lng: 30.046451,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '11 Sep 2026',
+    details:  "A merchant vessel reported two drone fragments. The drones did not contain explosives and were recovered by the naval guard.",
+    link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
+    country: "Black Sea, Romania 🇷🇴",
+  },
+
+   {
+    lat: 44.55805,
+    lng: 28.8949,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '11 Sep 2026, 17:55',
+    details:  "Four drones were found in Edighiol-Periboina, of which one was equipped with explosives.",
+    link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
+    country: "Edighiol-Periboina, Romania 🇷🇴"
+      },
    
  /* =========================
        S P A I N
