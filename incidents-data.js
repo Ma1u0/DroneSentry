@@ -2221,16 +2221,32 @@ const incidentsData = [
       {
     lat: 50.853611,
     lng: 22.6525,
-    type: 'jet',      // used for filtering
+    type: 'rocket',      // used for filtering
     risk: 'red',
     place: 'others',
     year: '2026',
     month: '07',
     popupType: 'Crash site', // shown in popup
-    date: '30 July 2026, 03:46',
+    date: '30 Jul 2026, 03:46',
     details: "Sirens sounded arounded Lublin at around 03:50, as a Russian Ch-101 rocket, armed with significant explosives, entered Polish airspace. One F-16 jet was scrambled which, according to Prime Minister Donald Tusk, was ready to shoot the rocket down but decided against because of it not being a danger to anyone. <br><br> Tarnawa-Kolonia is around 100km from the Ukrainian border.",
     link: "https://wiadomosci.wp.pl/mon-ujawnil-nowe-informacje-w-kierunku-polski-lecialo-wiecej-rakiet-7313133095090176a",
     country: "Tarnawa-Kolonia, Poland 🇵🇱",
+  },
+
+{
+    lat: 54.5125,
+    lng: 16.516111,
+    type: 'drone',      // used for filtering
+    risk: 'orange',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '14 Sep 2026',
+    details: "Polish navy spotted what seems to be a Russian Gerbera drone at the beach of Rusinowo near Jarosławiec. ",
+    link: "https://www.polsatnews.pl/wiadomosc/2026-09-14/wojskowy-dron-z-rosji-na-plazy-w-rusinowie-szef-mon-potwierdza/",
+    country: "Rusinowo, Poland 🇵🇱",
+    note: "Rusinowo is about 10km from Wicko Morskie, which is a military base focused on air defense"
   },
     
      /* =========================
