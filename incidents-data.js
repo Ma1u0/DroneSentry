@@ -2736,6 +2736,21 @@ place: 'others',
     link: "https://www.digi24.ro/stiri/drona-gasita-pe-plaja-din-corbu-3942105",
     country: "Corbu, Romania 🇷🇴",
   },
+
+   {
+    lat: 47.875278,
+    lng: 26.105833,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '12 Sep 2026',
+    details:  "A RO-alert was sent at 16:20 and later a drone debris was found in a cornfield. Two Romanian F-16 jets were scrambled to monitor the situation",
+    link: "https://www.digi24.ro/stiri/botosani-mesaj-ro-alert-pentru-populatie-privind-o-posibila-incursiune-de-drone-3945285",
+    country: "Botoșanița Mare, Romania 🇷🇴",
+  },
    
  /* =========================
        S P A I N
