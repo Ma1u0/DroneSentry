@@ -1588,6 +1588,22 @@ const incidentsData = [
     link: "https://www.reuters.com/world/drone-that-crashed-lithuania-came-ukraine-lithuanian-pm-says-2026-03-24/",
     country: "Varėna district, Lithuania 🇱🇹"
   },
+
+   
+  {
+    lat: 55.533,
+    lng: 26.091,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Airspace incursion / Crash site', // shown in popup
+    date: '15 Sep 2026, shortly after midnight',
+    details: "Shortly after midnight a drone entered Lithuanian airspace from Belarus. Vilnius airport was closed and a level 2 warning was send to citizens in the Vilnius region. NATO jets were scrambled and shot down the drone. So far it is unknown wether it was equipped with explosives or not.",
+    link: "https://www.reuters.com/world/drone-that-crashed-lithuania-came-ukraine-lithuanian-pm-says-2026-03-24/",
+    country: "Pratkūnai, Lithuania 🇱🇹"
+  },
     
      /* =========================
         N E T H E R L A N D S
