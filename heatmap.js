@@ -232,8 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // of the site instead of using an invented one-off hue.
     const stops = [
       [246, 239, 227],  // t=0   - warm parchment
-      [227, 143, 74],   // t=0.5 - warm orange
-      [161, 61, 51]      // t=1   - the site's actual accent red (--red)
+      [191, 79, 55],    // t=0.5 - warm red-orange (leans red, not amber)
+      [140, 30, 25]     // t=1   - deep crimson red
     ];
     const seg = t < 0.5 ? 0 : 1;
     const localT = t < 0.5 ? t / 0.5 : (t - 0.5) / 0.5;
