@@ -109,18 +109,19 @@ a:hover { color: var(--red); }
 
 .sidebar-social {
   margin-top: auto;
-  align-self: flex-start;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 6px;
-  color: #E9ECF1;
+  gap: 10px;
+  padding: 14px 10px 4px;
+  margin: 0 -10px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #C7CEDA;
   text-decoration: none;
+  font-size: 14px;
 }
-.sidebar-social svg { width: 22px; height: 22px; }
-.sidebar-social:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.sidebar-social:hover { color: #fff; }
+.sidebar-social svg { flex-shrink: 0; opacity: 0.9; }
+.sidebar-social:hover svg { opacity: 1; }
 
 #sidebar-handle {
   position: fixed;
