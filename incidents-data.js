@@ -280,8 +280,8 @@ const incidentsData = [
   type: 'drone',        // used for filtering
   risk: 'orange',
   place: 'airports',
-  year: '2025',
-  month: '11',
+  year: ['2025', '2026'],
+  month: ['11', '09'],
   country: "Brussels Airport, Belgium 🇧🇪",
 
   note: "The Belgian security service considers Russia to be behind the drones",
