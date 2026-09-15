@@ -109,7 +109,7 @@ a:hover { color: var(--red); }
 
 .sidebar-social {
   margin-top: auto;
-  align-self: flex-start;
+  align-self: flex-end;
   display: inline-flex;
   align-items: center;
   justify-content: center;

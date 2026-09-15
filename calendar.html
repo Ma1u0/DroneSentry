@@ -16,6 +16,7 @@
 #calendar-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 48px 24px 80px;
   gap: 36px;
   margin-left: 0;
@@ -132,10 +133,21 @@
 
 /* INCIDENT DISPLAY */
 #incident-display {
+  display: none;
   width: 320px;
   margin-top: 0;
   font-size: 14.5px;
   color: var(--ink-soft);
+}
+
+.incident-date-header {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
 }
 
 .incident-item {
@@ -2247,11 +2259,16 @@ function renderCalendar(){
     }
 
     el.onclick=()=>{
+      incidentDisplay.style.display='block';
+
+      const clickedDate = new Date(y, m, d);
+      const dateHeader = `<div class="incident-date-header">${clickedDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</div>`;
+
       if(!incidents){
-        incidentDisplay.innerHTML='<i>No incidents</i>';
+        incidentDisplay.innerHTML=dateHeader+'<i>No incidents</i>';
         return;
       }
-      incidentDisplay.innerHTML=incidents.map(i=>`
+      incidentDisplay.innerHTML=dateHeader+incidents.map(i=>`
         <div class="incident-item">
           <b>${i.country} (<a href="${i.link}" target="_blank">source</a>)</b>
           <span class="incident-meta-label">Date</span> ${i.date}<br>
