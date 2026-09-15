@@ -231,9 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // landing on the site's own accent red ties the map back to the rest
     // of the site instead of using an invented one-off hue.
     const stops = [
-      [246, 239, 227],  // t=0   - warm parchment
-      [227, 143, 74],   // t=0.5 - warm orange
-      [161, 61, 51]      // t=1   - the site's actual accent red (--red)
+      [250, 235, 235],  // t=0   - pale blush
+      [178, 34, 34],    // t=0.5 - crimson
+      [90, 15, 15]      // t=1   - deep wine
     ];
     const seg = t < 0.5 ? 0 : 1;
     const localT = t < 0.5 ? t / 0.5 : (t - 0.5) / 0.5;
