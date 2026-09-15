@@ -477,8 +477,9 @@ const incidentsData = [
     place: 'others',
     year: '2025',
     month: '09',
+    approxLocation: true, // no specific base was named - lat/lng is just a rough country-center placeholder, so keep this out of the subdivision map
     popupType: 'Drone sighting', // shown in popup
-    date: '2025',
+    date: '10 Sep 2025',
     details: "On September 10th, the Czech army reported an growing number of drone sightings over it's military bases. No further details were provided",
     link: "https://www.reuters.com/business/aerospace-defense/russias-suspected-hybrid-war-puts-european-air-defences-test-2025-11-05/",
     country: "Czech Republic 🇨🇿"

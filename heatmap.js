@@ -175,6 +175,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const iso3 = COUNTRY_ISO3[country];
       entry._iso3 = iso3 || null;
       entry._admin1 = null;
+      // approxLocation marks entries whose lat/lng is only a rough
+      // placeholder (e.g. "somewhere over the country", no real pinpoint) -
+      // still valid for country-level totals, but not precise enough to
+      // attribute to a specific subdivision.
+      if (entry.approxLocation) return;
       if (iso3 && adm1FeaturesByIso[iso3] && typeof entry.lng === 'number' && typeof entry.lat === 'number') {
         const pt = [entry.lng, entry.lat];
         const match = adm1FeaturesByIso[iso3].find(f => pointInFeature(pt, f.geometry));
