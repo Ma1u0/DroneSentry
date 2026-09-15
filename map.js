@@ -63,7 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function riskCap(r){ return r.charAt(0).toUpperCase() + r.slice(1); }
   function getIcon(i){
     const key = i.type + riskCap(i.risk);
-    return icons[key] || icons.droneYellow;
+    if (icons[key]) return icons[key];
+    // No dedicated icon set for this type (e.g. 'rocket') - fall back to the
+    // drone icon in the correct risk color, so the actor/verification color
+    // coding stays accurate even without a matching icon.
+    return icons['drone' + riskCap(i.risk)] || icons.droneYellow;
   }
 
   // ------------------------
