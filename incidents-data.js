@@ -1617,7 +1617,7 @@ const incidentsData = [
     month: '09',
     popupType: 'Airspace incursion / crash site', // shown in popup
     date: '15 Sep 2026, shortly after midnight',
-    details: "Shortly after midnight a drone entered Lithuanian airspace from Belarus. Vilnius airport was closed and a level 2 warning was send to citizens in the Vilnius region. NATO jets were scrambled and shot down the drone. So far it is unknown wether it was equipped with explosives or not.",
+    details: "Shortly after midnight a drone entered Lithuanian airspace from Belarus. Vilnius airport was closed and a level 2 warning was send to citizens in the Vilnius region. NATO jets were scrambled and shot down the drone. <br><br> UPDATE 15.09.2026 <br> Defence Minister Robertas Kaunas confirmed that the drone was equipped with explosives",
     link: "https://www.lrt.lt/naujienos/lietuvoje/2/3052419/nkvc-tikslina-nato-naikintuvai-drona-sunaikino-kaisiadoriu-rajono-teritorijoje",
     country: "Pratkūnai, Lithuania 🇱🇹"
   },
