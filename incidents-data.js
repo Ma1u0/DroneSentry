@@ -299,13 +299,7 @@ const incidentsData = [
       date: '06 Nov 2025, 21:20 - 22:00',
       details: "The airport was closed following a drone sighting over the airport",
       link: "https://vrtnws.be/p.Pqn1MwxDy#bGl2ZWJsb2dfaXRlbV8xNzYyNDYyMDI5NDQw"
-    }
-   {
-      popupType: 'Drone sighting',
-      date: '12 Sep 2026, 19:50',
-      details: "A drone was detected within the critical safety zone of the runways causing flights to be diverted to a different runway. So far it is not suspected that a foreign actor is behind the incident. ",
-      link: "https://www.brusselstimes.com/brussels/2317057/drone-flying-over-brussels-airport-forces-three-flights-to-divert"
-    }
+    },
   ]
 },
 
@@ -390,21 +384,6 @@ const incidentsData = [
     country: "Doel Nuclear Power Plant, Belgium 🇧🇪",
     note: "The Belgian security service considers Russia to be behind the drones",
     noteLink: "https://www.vrt.be/vrtnws/en/2025/11/05/belgian-security-services-convinced-russia-is-behind-the-drone-i/"
-  },
-
-   {
-    lat: 50.887778,
-    lng: 4.469167,
-    type: 'drone',      // used for filtering
-    risk: 'yellow',
-    place: 'infrastructure',
-    year: '2026',
-    month: '09',
-    popupType: 'Drone sighting', // shown in popup
-    date: ' 11 Sep 2025, 21:45 ',
-    details: "A drone was spotted in Zaventem causing the airport to be closed as a precautionary measure. Three airplanes were diverted. The drone was seen both visually and by radar systems. So far it is not suspected that a foreign actor is behind the incident. ",
-    link: "https://www.brusselstimes.com/brussels/2317057/drone-flying-over-brussels-airport-forces-three-flights-to-divert",
-    country: "Zaventem, Belgium 🇧🇪",
   },
 
   /* =========================
