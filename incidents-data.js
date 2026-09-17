@@ -2276,7 +2276,7 @@ const incidentsData = [
     month: '09',
     popupType: 'Crash site', // shown in popup
     date: '14 Sep 2026',
-    details: "Polish navy spotted what seems to be a Russian Gerbera drone at the beach of Rusinowo near Jarosławiec. ",
+    details: "Polish navy spotted what seems to be a Russian Gerbera drone at the beach of Rusinowo near Jarosławiec. The drone was armed. ",
     link: "https://www.polsatnews.pl/wiadomosc/2026-09-14/wojskowy-dron-z-rosji-na-plazy-w-rusinowie-szef-mon-potwierdza/",
     country: "Rusinowo, Poland 🇵🇱",
     note: "Rusinowo is about 10km from Wicko Morskie, which is a military base focused on air defense"
