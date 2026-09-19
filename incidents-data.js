@@ -1621,7 +1621,53 @@ const incidentsData = [
     link: "https://www.lrt.lt/naujienos/lietuvoje/2/3052419/nkvc-tikslina-nato-naikintuvai-drona-sunaikino-kaisiadoriu-rajono-teritorijoje",
     country: "Pratkūnai, Lithuania 🇱🇹"
   },
-    
+
+   /* =========================
+        L U X E M B O U R G
+    ========================= */
+
+  {
+    lat: 49.6268,
+    lng: 6.2121,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'airports',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone sighting / airport closure', // shown in popup
+    date: '18 Sep 2026, 21:45 - 00:30',
+    details: "Unauthorized drone activity was reported at the airport causing the airport to be closed. 19 flights had to be diverted.",
+    link: "https://today.rtl.lu/news/luxembourg/drone-activity-over-luxembourg-airport-forces-19-flights-to-divert-962305685",
+    country: "Luxembourg airport, Luxembourg 🇱🇺"
+  },
+
+{
+  lat: 49.809444,
+  lng: 6.215556,
+  type: 'drone',        // used for filtering
+  risk: 'yellow',
+  place: 'others',
+  year: ['2026'],
+  month: ['09'],
+  country: "Medernach, Luxembourg 🇱🇺",
+
+  incidents: [
+    {
+      popupType: 'Drone sighting', // shown in popup
+      date: '15 Sep 2026',
+      details: "Citizens reported the sighting of suspicious drones. The government convened a drone task force following this incident.",
+      link: "https://www.wort.lu/luxemburg/stadaland/drohnenmeldungen-im-luxemburgischen-luftraum-in-der-region-medernach/161616744.html",
+    },
+    {
+      popupType: 'Drone sighting', // shown in popup
+      date: '16 Sep 2026',
+      details: "Citizens reported the sighting of suspicious drones. The government convened a drone task force following this incident.",
+      link: "https://www.wort.lu/luxemburg/stadaland/drohnenmeldungen-im-luxemburgischen-luftraum-in-der-region-medernach/161616744.html",
+    },
+  ]
+},
+
+   
      /* =========================
         N E T H E R L A N D S
     ========================= */
