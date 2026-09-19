@@ -1667,6 +1667,81 @@ const incidentsData = [
   ]
 },
 
+{
+    lat: 49.7625,
+    lng: 6.033889,
+    type: 'drone',      // used for filtering
+    risk: 'green',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Possible drone sighting', // shown in popup
+    date: '18 Sep 2026, evening',
+    details: "According to videos obtained by RTL, suspicious lightings have been observed in multiple locations across northern and north-eastern Luxembourg prior to the incident at Luxembourg airport. Authorities have not yet commented on these incidents",
+    link: "https://today.rtl.lu/news/luxembourg/drone-activity-over-luxembourg-airport-forces-19-flights-to-divert-962305685",
+    country: "Grevenknapp, Luxembourg 🇱🇺"
+  },
+
+   {
+    lat: 49.750556,
+    lng: 6.006667,
+    type: 'drone',      // used for filtering
+    risk: 'green',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Possible drone sighting', // shown in popup
+    date: '18 Sep 2026, evening',
+    details: "According to videos obtained by RTL, suspicious lightings have been observed in multiple locations across northern and north-eastern Luxembourg prior to the incident at Luxembourg airport. Authorities have not yet commented on these incidents",
+    link: "https://today.rtl.lu/news/luxembourg/drone-activity-over-luxembourg-airport-forces-19-flights-to-divert-962305685",
+    country: "Buschdorf, Luxembourg 🇱🇺"
+  },
+
+{
+    lat: 49.737222,
+    lng: 6.018889,
+    type: 'drone',      // used for filtering
+    risk: 'green',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Possible drone sighting', // shown in popup
+    date: '18 Sep 2026, evening',
+    details: "According to videos obtained by RTL, suspicious lightings have been observed in multiple locations across northern and north-eastern Luxembourg prior to the incident at Luxembourg airport. Authorities have not yet commented on these incidents",
+    link: "https://today.rtl.lu/news/luxembourg/drone-activity-over-luxembourg-airport-forces-19-flights-to-divert-962305685",
+    country: "Brouch, Luxembourg 🇱🇺"
+  },
+
+   {
+    lat: 49.868611,
+    lng: 6.16,
+    type: 'drone',      // used for filtering
+    risk: 'green',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Possible drone sighting', // shown in popup
+    date: '18 Sep 2026, evening',
+    details: "According to videos obtained by RTL, suspicious lightings have been observed in multiple locations across northern and north-eastern Luxembourg prior to the incident at Luxembourg airport. Authorities have not yet commented on these incidents",
+    link: "https://today.rtl.lu/news/luxembourg/drone-activity-over-luxembourg-airport-forces-19-flights-to-divert-962305685",
+    country: "Diekirch, Luxembourg 🇱🇺"
+  },
+
+      {
+    lat: 49.811939,
+    lng: 6.098153,
+    type: 'drone',      // used for filtering
+    risk: 'green',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Possible drone sighting', // shown in popup
+    date: '18 Sep 2026, evening',
+    details: "According to videos obtained by RTL, suspicious lightings have been observed in multiple locations across northern and north-eastern Luxembourg prior to the incident at Luxembourg airport. Authorities have not yet commented on these incidents",
+    link: "https://today.rtl.lu/news/luxembourg/drone-activity-over-luxembourg-airport-forces-19-flights-to-divert-962305685",
+    country: "Colmar-Berg, Luxembourg 🇱🇺"
+  },
+
    
      /* =========================
         N E T H E R L A N D S
