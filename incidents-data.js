@@ -1372,7 +1372,7 @@ const incidentsData = [
      month: '09',
     popupType: 'Drone sighting', // shown in popup
     date: '14 Sep 2026, evening',
-    details: "On Monday, 14 Sep, the Landeskriminalamt received reports of drone debris near Wunstdorf/Steinhuder Meer. Since Tuesday morning (15 Sep) the police is searching for the remaining, assumingly small, parts of the drone in an uninhabitet boggy area. The actor is unknown. ",
+    details: "On Monday, 14 Sep, the Landeskriminalamt received reports of drone debris near Wunstdorf/Steinhuder Meer. Since Tuesday morning (15 Sep) the police is searching for the remaining, assumingly small, parts of the drone in an uninhabitet boggy area. The drone is reportedly the same type of drone as the drone used in the incident at Leipzig/Halle airport. The actor is unknown. ",
     link: "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/drohne-stuerzt-nahe-steinhuder-meer-ab-grosseinsatz-der-polizei,drohne-458.html",
     country: "Wunstdorf, Germany 🇩🇪",
    note: "The Fliegerhorst Wunstdorf is home to all A400M transport aircrafts of the Bundeswehr, which are used for transportation and mid-air refueling and is about one kilometer from the search area."
