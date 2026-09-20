@@ -34,6 +34,19 @@ html, body { margin:0; height:100%; }
   filter: grayscale(0.88) brightness(1.1) contrast(0.95);
 }
 
+/* Time slider */
+#time-panel { bottom:14px; left:50%; transform:translateX(-50%); width:500px; }
+#time-panel.collapsed { width:150px; }
+#time-label { text-align:center; font-family: var(--font-mono); font-size:14px; color: var(--red-deep); margin-bottom:8px; }
+#time-slider { width:100%; accent-color: var(--red); }
+#time-controls { display:flex; align-items:center; gap:10px; justify-content:center; margin-top:8px; flex-wrap:wrap; }
+#time-controls button {
+  background: var(--navy); color:white; border:none; border-radius:4px;
+  padding:6px 14px; cursor:pointer; font-family: var(--font-body); font-size:13.5px;
+}
+#time-controls button:hover { background: var(--navy-deep); }
+#time-controls label { font-size:13px; color: var(--ink-soft); display:flex; align-items:center; gap:4px; }
+
 /* Filters */
 #filters { bottom:14px; right:14px; width:760px; }
 #filters.collapsed { width:130px; height:auto; }
@@ -194,13 +207,16 @@ html, body { margin:0; height:100%; }
    ========================= */
 @media (max-width: 768px) {
   #filters,
-  #legend {
+  #legend,
+  #time-panel {
     width: calc(100% - 20px);
     left:10px;
     right:10px;
+    transform:none;
   }
   #filters { bottom:10px; }
   #legend { top:10px; }
+  #time-panel { bottom: 70px; }
   #sentence-filters { font-size:13px; gap:5px; }
   .leaflet-popup-content { font-size:13px; }
 }
@@ -231,6 +247,24 @@ html, body { margin:0; height:100%; }
 
 <!-- Map -->
 <div id="map"></div>
+
+<!-- Time slider -->
+<div id="time-panel" class="panel collapsed">
+  <div class="panel-header">
+    <span>Timeline</span>
+    <button class="collapse-btn" onclick="togglePanel('time-panel')">▾</button>
+  </div>
+  <div class="panel-content">
+    <div id="time-label">Loading…</div>
+    <input type="range" id="time-slider" min="0" max="0" value="0" step="1">
+    <div id="time-controls">
+      <button id="prevPeriod">◀</button>
+      <button id="playPause">▶ Play</button>
+      <button id="nextPeriod">▶</button>
+      <label><input type="checkbox" id="cumulative" checked> Cumulative</label>
+    </div>
+  </div>
+</div>
 
 <!-- Filters Panel -->
 <div id="filters" class="panel collapsed">
