@@ -2402,6 +2402,22 @@ const incidentsData = [
     country: "Rusinowo, Poland 🇵🇱",
     note: "Rusinowo is about 10km from Wicko Morskie, which is a military base focused on air defense"
   },
+
+   {
+    lat: 54.472778,
+    lng: 17.123056,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'militarybases',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone sighting', // shown in popup
+    date: '15 Sep 2026, in the afternoon',
+    details: "A drone flew near the base in Redzikowo for about five minutes. The unit stationed there called the police but the Polish ministry of defense refused to say wether anti drone systems or other neutralisation efforts were taken. The location from where the drone was flown was established but it is unknown wether they were able to catch the pilot.",
+    link: "https://wiadomosci.onet.pl/tylko-w-onecie/nad-amerykanska-baza-pojawil-sie-dron-wojsko-zadzwonilo-na-numer-alarmowy-112/0099s50",
+    country: "Redzikowo, Poland 🇵🇱",
+    note: "Redzikowo is one of the locations where the American 'Aegis Ashore' missile defense systems are stationed"
+  },
     
      /* =========================
        R O M A N I A
