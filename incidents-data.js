@@ -1095,19 +1095,30 @@ const incidentsData = [
   },
 
    {
-    lat: 52.36593,
-    lng: 13.48864,
-    type: 'drone',      // used for filtering
+  lat: 52.36593,
+   lng: 13.48864,
+   type: 'drone',      // used for filtering
     risk: 'yellow',
     place: 'airports',
-    year: '2025',
-    month: '10',
-    popupType: 'Drone sighting / airport closure', // shown in popup
-    date: ' 31 Oct 2025, ~20:00 - ~22:00',
-    details: "Police confirmed a drone sighting at BER but the drone later disappeared despite using police helicopters",
-    link: "https://www.rbb24.de/panorama/beitrag/2025/10/ber-flughafen-unterbrochen-drohne-polizei.html",
-    country: "Berlin-Brandenburg Airport, Germany 🇩🇪",
-  },
+  year: ['2025', '2026'],
+  month: ['10', '09'],
+  country: "Berlin-Brandenburg Airport, Germany 🇩🇪",
+
+  incidents: [
+    {
+      popupType: 'Drone sighting / airport closure', // shown in popup
+       date: ' 31 Oct 2025, ~20:00 - ~22:00',
+       details: "Police confirmed a drone sighting at BER but the drone later disappeared despite using police helicopters",
+       link: "https://www.rbb24.de/panorama/beitrag/2025/10/ber-flughafen-unterbrochen-drohne-polizei.html",
+     },
+    {
+      popupType: 'Drone sighting / airport closure',
+      date: '23 Sep 2026, 20:20 - 21:05',
+      details: "A drone was reported on the northern runway of the airport at 8pm causing the airspace over the airport to be closed between 20:20 and 21:05 forcing multiple flights to divert to Leipzig and Dresden. According to one of the pilots of a diverted flights, three drones were spotted. So far police only confirmed that multiple people have reported drones at the airport. ",
+      link: "https://www.bild.de/news/maschinen-teils-umgeleitet-drohnen-alarm-am-berliner-flughafen-6ab423834e1356a4e00bc29c?t_ref=https%3A%2F%2Ft.co%2F"
+    },
+  ]
+},
 
 {
   lat: 53.04534,
@@ -1372,10 +1383,10 @@ const incidentsData = [
      month: '09',
     popupType: 'Drone sighting', // shown in popup
     date: '14 Sep 2026, evening',
-    details: "On Monday, 14 Sep, the Landeskriminalamt received reports of drone debris near Wunstdorf/Steinhuder Meer. Since Tuesday morning (15 Sep) the police is searching for the remaining, assumingly small, parts of the drone in an uninhabitet boggy area. The drone is reportedly the same type of drone as the drone used in the incident at Leipzig/Halle airport. The actor is unknown. ",
+    details: "On Monday, 14 Sep, the Landeskriminalamt received reports of drone debris near Wunstorf/Steinhuder Meer. Since Tuesday morning (15 Sep) the police is searching for the remaining, assumingly small, parts of the drone in an uninhabitet boggy area. The drone is reportedly the same type of drone as the drone used in the incident at Leipzig/Halle airport. The actor is unknown. <br><br> UPDATE 23/09/2026 <br> Prosecutors found a suspicious substance near the wreckage suspecting it to be explosives. Prosecutors also believe that the wreckage could be two years old already.",
     link: "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/drohne-stuerzt-nahe-steinhuder-meer-ab-grosseinsatz-der-polizei,drohne-458.html",
-    country: "Wunstdorf, Germany 🇩🇪",
-   note: "The Fliegerhorst Wunstdorf is home to all A400M transport aircrafts of the Bundeswehr, which are used for transportation and mid-air refueling and is about one kilometer from the search area."
+    country: "Wunstorf, Germany 🇩🇪",
+   note: "The Fliegerhorst Wunstorf is home to all A400M transport aircrafts of the Bundeswehr, which are used for transportation and mid-air refueling and is about one kilometer from the search area."
   },
     
    /* =========================
@@ -1485,8 +1496,8 @@ const incidentsData = [
   type: 'balloon',        // used for filtering
   risk: 'yellow',
   place: 'airports',
-  year: '2025',
-  month: ['10', '11', '12'],  
+  year: ['2025', '2026'],
+  month: ['10', '11', '12', '09'],  
   country: "Vilnius Airport, Lithuania 🇱🇹",
 
   note: "List is scrollable due to too many incidents",
@@ -1555,8 +1566,14 @@ const incidentsData = [
     {
       popupType: 'Weather balloons / Smuggle balloons / Airport closure',
       date: '03 / 04 Dec 2025, 19:36 - 21:06; 22:24 - 00:56; 01:15 - 02:30',
-      details: "Air traffic was halted due to balloons moving in he direction of Vilnius Airport <br>The report by the airport called this attack a 'hybrid attack by Belarus'",
+      details: "Air traffic was halted due to balloons moving in the direction of Vilnius Airport <br>The report by the airport called this attack a 'hybrid attack by Belarus'",
       link: "https://www.vilnius-airport.lt/en/news/temporary-disruptions-at-vilnius-airport-resolved"
+    },
+   {
+      popupType: 'Smuggle balloons / Airport closure',
+      date: '21 Sep 2026, 23:25 - 02:40',
+      details: "Air traffic was halted due to balloons moving from Belarus in the direction of Vilnius Airport ",
+      link: "https://www.lrt.lt/en/news-in-english/19/3060081/vilnius-airport-forced-to-impose-airspace-restrictions-over-threat-of-smuggling-balloons?srsltid=AU7gw4XaozhD-wjXTTOwWR5G2dIoikxAR-6erkEB8OEHkPgw4YCoN6Ce"
     },
   ]
 },
@@ -2417,6 +2434,21 @@ const incidentsData = [
     link: "https://wiadomosci.onet.pl/tylko-w-onecie/nad-amerykanska-baza-pojawil-sie-dron-wojsko-zadzwonilo-na-numer-alarmowy-112/0099s50",
     country: "Redzikowo, Poland 🇵🇱",
     note: "Redzikowo is one of the locations where the American 'Aegis Ashore' missile defense systems are stationed"
+  },
+
+      {
+    lat: 54.430833,
+    lng: 19.771111,
+    type: 'jet',      // used for filtering
+    risk: 'red',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '23 Sep 2026, 11:08 ',
+    details: "A Russian Mi-8 helicopter entered Polish airspace from Kaliningrad for 42 seconds and up to 300 meters deep before leaving it again. Polish radar systems monitored the helicopter. ",
+    link: "https://wiadomosci.onet.pl/tylko-w-onecie/nad-amerykanska-baza-pojawil-sie-dron-wojsko-zadzwonilo-na-numer-alarmowy-112/0099s50",
+    country: "Nowa Pasłęka, Poland 🇵🇱",
   },
     
      /* =========================
