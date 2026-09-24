@@ -3032,6 +3032,22 @@ place: 'others',
     link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
     country: "Edighiol-Periboina, Romania 🇷🇴"
       },
+
+   
+   {
+    lat: 47.699722,
+    lng: 25.8375,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '24 Sep 2026, morning',
+    details:  "A small-sized drone has been flying in Romanian airspace for approximately four minutes before crashing near Solca. No damage has been reported. A RO-alert has been issued at 06:26. ",
+    link: "https://english.mapn.ro/cpresa/6871_Update-–-Press-Release",
+    country: "Solca, Romania 🇷🇴"
+   },
    
  /* =========================
        S P A I N
