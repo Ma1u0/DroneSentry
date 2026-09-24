@@ -3002,21 +3002,31 @@ place: 'others',
     country: "Periteașca, Romania 🇷🇴",
   },
 
-   
    {
-    lat: 44.260412,
-    lng: 30.046451,
-    type: 'drone',      // used for filtering
-    risk: 'yellow',
-    place: 'others',
-    year: '2026',
-     month: '09',
-    popupType: 'Crash site', // shown in popup
+  lat: 44.260412,
+lng: 30.046451,
+ type: 'drone',      // used for filtering
+ risk: 'yellow',
+place: 'others',
+  year: '2026',
+  month: ['09'],  
+  country: "Black Sea, Romania 🇷🇴",
+
+  incidents: [
+    {
+   popupType: 'Crash site', // shown in popup
     date: '11 Sep 2026',
     details:  "A merchant vessel reported two drone fragments. The drones did not contain explosives and were recovered by the naval guard.",
     link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
-    country: "Black Sea, Romania 🇷🇴",
-  },
+   },
+    {
+      popupType: 'Crash site',
+      date: ' 20 Sep 2026, 17:30 / 19:00',
+      details: "Three drone fragments were found in different locations of the exclusive economic zone of Romania in the Black Sea following reports from merchant vessels. None of these were loaded with explosives. The fragments were found each 33, 37, and 42 nautical miles from Constanta",
+      link: "https://www.digi24.ro/stiri/fragmente-de-drona-au-fost-gasite-in-trei-locuri-diferite-din-marea-neagra-in-zona-exclusiv-economica-a-romaniei-anuntul-mapn-3956163",
+     },
+  ]
+},
 
    {
     lat: 44.55805,
