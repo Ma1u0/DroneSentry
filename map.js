@@ -176,10 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------
   (function openLinkedIncident() {
     const params = new URLSearchParams(window.location.search);
-    const target = params.get('link');
-    if (!target) return;
-    let decoded;
-    try { decoded = decodeURIComponent(target); } catch (e) { decoded = target; }
+    // URLSearchParams.get() already URL-decodes the value once. Decoding it
+    // again here used to corrupt any source link that itself contains a
+    // percent-encoded sequence (e.g. a link with "...?t_ref=https%3A%2F%2F...")
+    // by turning that embedded encoding into literal characters, so it no
+    // longer matched the link stored in incidents-data.js and the popup
+    // silently failed to open. Use the already-decoded value directly.
+    const decoded = params.get('link');
+    if (!decoded) return;
 
     // Normalize away the differences that shouldn't matter for matching:
     // surrounding whitespace/quote typos, a trailing URL fragment (which can
