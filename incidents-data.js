@@ -1232,6 +1232,33 @@ const incidentsData = [
     country: " Schönewalde/Holzdorf, Germany 🇩🇪",
   },
 
+   {
+  lat: 51.81460,
+   lng: 13.21903,
+   type: 'drone',      // used for filtering
+   risk: 'yellow',
+   place: 'militarybases',
+  year: ['2025', '2026'],
+  month: ['12', '09'],
+  country: " Schönewalde/Holzdorf, Germany 🇩🇪",
+
+  incidents: [
+    {
+   popupType: 'Drone sighting', // shown in popup
+    date: '01 Dec 2025, 16:40',
+    details: "Three drones of an unknown type were spotted above an Arrow 3, only two days before its commissioning. One of the drones was visually confirmed by a Bundeswehr drone and an attemt to shoot the drones down failed. <br><br> According to Bundeswehr it is already the second suspicious drone sighting over this weapon system and it is assumed that this incident was intended.",
+    link: "https://www.tagesschau.de/investigativ/ndr-wdr/drohnenabwehr-120.html",
+   },
+    {
+      popupType: 'Drone sighting',
+      date: '05 Sep 2026, 21:45',
+      details: "According to investigative journalist Florian Flade, a one-meter-long drone was seen over the airbase in Schönewalde/Holzdorf at 21:45. Drone jammers were placed at the bunker facilities, which the drone flew over before, but were unsuccessful due to the distance. A second drone appeared shortly afterwards on the same route as the first drone but turned around. ",
+      link: "https://x.com/FlorianFlade/status/2103031238366040171?s=20",
+      note: "The base had new components for the Arrow 3 systems delivered only one week before the incident."
+    },
+  ]
+},
+
   {
     lat: 50.979722,
     lng: 10.958056,
