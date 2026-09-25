@@ -913,6 +913,22 @@ const incidentsData = [
      /* =========================
        F R A N C E
     ========================= */
+
+{
+    lat: 49.14,
+    lng: 4.365556,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2025',
+   month: '09',
+    popupType: 'Drone sighting', // shown in popup
+    date: ' 22 Sep 2025',
+    details: "A small unidentified drone has been spotted over the base in Mourmelon-le-Grand. A state actor is not suspected but the actor is unknown.",
+    link: "https://www.euronews.com/2025/09/26/unidentified-drones-spark-security-alert-at-french-military-base",
+    country: "Mourmelon-le-Grand, France 🇫🇷",
+    note: "Mourmelon-le-Grand has been hosting Ukrainian soldiers for training."
+  },
    
 {
     lat: 47.74672,
@@ -958,7 +974,7 @@ const incidentsData = [
     details: "Five drones were spotted over the base with the help of anti drone systems. The stationed battalion shot at the drones",
     link: "https://www.lemonde.fr/en/france/article/2025/12/05/france-takes-anti-drone-measures-after-flight-over-nuclear-sub-base_6748188_7.html",
     country: "Ile Longue, France 🇫🇷",
-    note: "ÃŽle Longue is home to four French nuclear ballistic missile submarines",
+    note: "Ile Longue is home to four French nuclear ballistic missile submarines",
     note_Link: "https://www.lemonde.fr/en/france/article/2025/12/05/france-takes-anti-drone-measures-after-flight-over-nuclear-sub-base_6748188_7.html"
   },
 
