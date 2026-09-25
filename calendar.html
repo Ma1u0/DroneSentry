@@ -246,7 +246,7 @@
 .legend-circle.yellow { background: #D9B94A; }
 .legend-circle.green { background: #4C8A5E; }
 
-#czech-note {
+.month-note {
   font-style: italic;
   margin-top: 12px;
   color: var(--ink-faint);
@@ -315,7 +315,9 @@
       <button id="goToday" class="today-btn">This month</button>
     </div>
     <div id="calendar-grid"></div>
-    <div id="czech-note"></div>
+    <div id="czech-note" class="month-note"></div>
+    <div id="jassbach-note" class="month-note"></div>
+    <div id="meiringen-note" class="month-note"></div>
     <div id="calendar-legend">
       <div class="legend-row">
         <div class="legend-color single"></div> Single incident
@@ -2357,6 +2359,8 @@ const incidentDisplay = document.getElementById('incident-display');
 const monthSelect = document.getElementById('monthSelect');
 const yearSelect = document.getElementById('yearSelect');
 const czechNote = document.getElementById('czech-note');
+const jassbachNote = document.getElementById('jassbach-note');
+const meiringenNote = document.getElementById('meiringen-note');
 
 const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 let currentDate = new Date(2025,8,1);
@@ -2449,6 +2453,15 @@ function renderCalendar(){
   // Czech note only for September 2025
   if(y===2025 && m===8) czechNote.textContent='* On September 10th, the Czech army reported a growing number of drone sightings above its military bases but provided no date or place.';
   else czechNote.textContent='';
+
+  // Jassbach note only for February 2026 (no exact date given, only "multiple days in Feb 2026")
+  if(y===2026 && m===1) jassbachNote.textContent='* During February 2026, the Swiss army reported multiple drones flying in formation over the Jassbach / Wolfrichti military base, but provided no specific date.';
+  else jassbachNote.textContent='';
+
+  // Meiringen note spans all of 2025 through July 2026, since the incidents were reported
+  // to have occurred throughout that period with no exact dates given
+  if(y===2025 || (y===2026 && m===6)) meiringenNote.textContent='* Multiple drone incidents have been reported at Meiringen air base throughout 2025 and into 2026, but no exact dates have been given.';
+  else meiringenNote.textContent='';
 }
 
 document.getElementById('prevMonth').onclick=()=>{
