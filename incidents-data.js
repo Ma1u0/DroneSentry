@@ -961,6 +961,41 @@ const incidentsData = [
     note: "ÃŽle Longue is home to four French nuclear ballistic missile submarines",
     note_Link: "https://www.lemonde.fr/en/france/article/2025/12/05/france-takes-anti-drone-measures-after-flight-over-nuclear-sub-base_6748188_7.html"
   },
+
+   
+{
+  lat: 48.35396,
+  lng: 11.77859,
+  type: 'drone',        // used for filtering
+  risk: 'yellow',
+  place: 'airports',
+   year: ['2025',],
+  month: ['11',],
+  country: "Creil military base, France 🇫🇷",
+
+   note: "The Creil base houses an intelligence training centre.",
+
+  incidents: [
+    {
+      popupType: 'Drone sighting',
+      date: '26 Nov 2025, night',
+      details: "Drones were seen over the base but it wasn't specified wether the drones were neutralised or disrupted. A specialised helicopter arrived once the drones were gone.",
+      link: "https://www.reuters.com/world/europe/suspected-drones-seen-over-french-military-intelligence-base-armed-forces-say-2025-12-09/"
+    },
+    {
+      popupType: 'Unverified drone sighting',
+      date: '28 Nov 2025, night',
+      details: "Due to bad weather conditions it was impossible to determine wether it was drones or aircraft that were seen this night.",
+      link: "https://www.reuters.com/world/europe/suspected-drones-seen-over-french-military-intelligence-base-armed-forces-say-2025-12-09/"
+    },
+    {
+      popupType: 'Unverified drone sighting',
+      date: '30 Nov 2025, night',
+      details: "Due to bad weather conditions it was impossible to determine wether it was drones or aircraft that were seen this night.",
+      link: "https://www.reuters.com/world/europe/suspected-drones-seen-over-french-military-intelligence-base-armed-forces-say-2025-12-09/'"
+    },
+  ]
+},
     
      /* =========================
        G E R M A N Y
