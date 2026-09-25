@@ -936,7 +936,7 @@ const incidentsData = [
       popupType: 'Drone sighting',
       date: '02 Oct 2025, evening',
       details: "Three unidentified drones were seen over the 10,000 hectare base",
-      link: "https://www.lemonde.fr/economie/article/2026/03/09/en-france-face-a-la-montee-de-la-menace-la-lutte-anti-drones-passe-a-l-echelle-industrielle_6670045_3234.html?utm_source=chatgpt.com"
+      link: "https://www.lemonde.fr/economie/article/2026/03/09/en-france-face-a-la-montee-de-la-menace-la-lutte-anti-drones-passe-a-l-echelle-industrielle_6670045_3234.html?utm"
     },
   ]
 },
