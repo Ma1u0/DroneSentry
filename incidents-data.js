@@ -1867,6 +1867,27 @@ const incidentsData = [
     country: "Colmar-Berg, Luxembourg 🇱🇺"
   },
 
+   /* =========================
+        M O L D O V A
+    ========================= */
+
+     {
+    lat: 46.9277,
+    lng: 28.9317,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '08 Sep 2026',
+    details: "A drone almost hit President Zelenskyy‘s plane departing from Chișinău to Oslo. <br> According to Norwegian Prime Minister Jonas Gahr Støre the incident almost ended in a tragedy",
+    link: "https://www.reuters.com/world/europe/zelenskiys-plane-almost-hit-by-drone-tuesday-norway-pm-says-2026-09-09/",
+    country: "Chișinău Airport, Moldova 🇲🇩"
+  },
+];
+
+
    
      /* =========================
         N E T H E R L A N D S
@@ -3253,7 +3274,7 @@ place: 'others',
     year: '2026',
     month: '02',
     popupType: 'Drone sighting', // shown in popup
-    date: '01-07 Feb 2026',
+    date: 'Multiple days in Feb 2026',
     details: "Multiple drones flew over the military base in formation during the first week of February 2026. It is unknown wether the pilot has been found. <br> Swiss generals suspect espionage. No charges were filed so far.",
     link: "https://www.srf.ch/news/schweiz/armee-aeussert-spionageverdacht-hier-flogen-die-mysterioesen-drohnen-ueber-militaeranlagen",
     country: "Jassbach / Wolfrichti, Switzerland 🇨🇭",
@@ -3269,7 +3290,7 @@ place: 'others',
     year: '2026',
     month: '07',
     popupType: 'Drone sighting', // shown in popup
-    date: '01-07 Jul 2026',
+    date: '2025 - 2026',
     details: "Multiple incidents have been reported at the base throughout 2025 and into 2026, but no exact dates have been given; placed here in the first week of July 2026, when the incidents were reported. The army suspects some of the incidents to be espionage due to Meiringen hosting F-35 jets. No charges were filed.",
     link: "https://www.blick.ch/politik/hat-die-armee-geschlafen-drohnen-ueber-luftwaffenstuetzpunkt-in-meiringen-be-id22083425.html",
     country: "Meiringen air base, Switzerland 🇨🇭",
@@ -3412,26 +3433,4 @@ place: 'others',
     country: "Trabzon, Türkiye 🇹🇷",
   },
 
-     /* =========================
-       U K
-    ========================= */
-
-   /* =========================
-        M O L D O V A
-    ========================= */
-
-     {
-    lat: 46.9277,
-    lng: 28.9317,
-    type: 'drone',      // used for filtering
-    risk: 'yellow',
-    place: 'others',
-    year: '2026',
-    month: '09',
-    popupType: 'Airspace incursion', // shown in popup
-    date: '08 Sep 2026',
-    details: "A drone almost hit President Zelenskyy‘s plane departing from Chișinău to Oslo. <br> According to Norwegian Prime Minister Jonas Gahr Støre the incident almost ended in a tragedy",
-    link: "https://www.reuters.com/world/europe/zelenskiys-plane-almost-hit-by-drone-tuesday-norway-pm-says-2026-09-09/",
-    country: "Chișinău Airport, Moldova 🇲🇩"
-  },
-];
+   
