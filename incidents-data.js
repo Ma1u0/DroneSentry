@@ -1480,6 +1480,41 @@ const incidentsData = [
     country: "Dublin Airport, Ireland 🇮🇪"
   },
 
+   /* =========================
+       I T A L Y
+    ========================= */
+
+   {
+    lat: 40.508993,
+    lng: 17.207589,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2025',
+     month: '09',
+    popupType: 'Drone sighting', // shown in popup
+    date: '19 Sep 2025, 21:00',
+    details: "Four drones have been spotted over the plant. The plant immediately called the Carabineri as the plant is considered critical infrastructure. The drones are describes to be professional models.",
+    link: "https://www.rainews.it/articoli/2025/09/droni-non-autorizzati-volano-sopra-lex-ilva-di-taranto-massima-allerta-per-la-sicurezza-50580e35-2a02-46ee-9b33-692c09075262.html?utm",
+    country: "Ilva Taranto, Taranto, Italy 🇮🇹"
+  },
+
+   
+   {
+    lat: 40.48947,
+    lng: 17.19333,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2025',
+     month: '09',
+    popupType: 'Drone sighting', // shown in popup
+    date: '20 Sep 2025, late evening',
+    details: "A drone has been seen over the refinery. The drones are describes to be professional models. Prosecurots are not excluding any actor.",
+    link: "https://bari.corriere.it/notizie/cronaca/25_settembre_25/taranto-forse-un-unica-regia-dietro-l-incursione-dei-droni-sugli-impianti-ex-ilva-ed-eni-potenziata-la-sicurezza-dd87366f-6fac-4ee6-9ab0-9470d25bdxlk.shtml?utm",
+    country: "Eni Taranto Refinery, Taranto, Italy 🇮🇹"
+  },
+
  /* =========================
        L A T V I A
     ========================= */
@@ -3202,6 +3237,43 @@ place: 'others',
     country: "Malmö harbour, Sweden 🇸🇪",
     note: "Swedish Armed Forces can now confirm that the drone started from the Russian vessel",
     noteLink: "https://www.svt.se/nyheter/inrikes/forsvaret-dronaren-var-rysk"
+  },
+
+     /* =========================
+       S W I T Z E R L A N D
+    ========================= */
+
+   
+  {
+    lat: 46.8500,
+    lng: 7.7006,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'militarybases',
+    year: '2026',
+    month: '07',
+    popupType: 'Drone sighting', // shown in popup
+    date: 'Multiple days in Feb 2026',
+    details: "Multiple drones flew over the military base in formation. It is unknown wether the pilot has been found. <br> Swiss generals suspect espionage. No charges were filed so far.",
+    link: "https://www.srf.ch/news/schweiz/armee-aeussert-spionageverdacht-hier-flogen-die-mysterioesen-drohnen-ueber-militaeranlagen",
+    country: "Jassbach / Wolfrichti, Switzerland 🇨🇭",
+    note: "Jassbach is the main location for training the army`s cyber specialists and signal intelligence. There is also the Wolfrichti intercept station right next to the base.",
+  },
+
+    {
+    lat: 46.74028,
+    lng: 8.11000,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'militarybases',
+    year: '2026',
+    month: '0',
+    popupType: 'Drone sighting', // shown in popup
+    date: 'Multiple incidents in 2025/2026',
+    details: "Multiple incidents have been reported at the base but no date has been given. The army suspects some of the incidents to be espionage due to Meiringen hosting F-35 jets. No charges were filed.",
+    link: "https://www.blick.ch/politik/hat-die-armee-geschlafen-drohnen-ueber-luftwaffenstuetzpunkt-in-meiringen-be-id22083425.html",
+    country: "Meiringen air base, Switzerland 🇨🇭",
+    note: "Meiringen is in the touristy part of the alps which is why some incidents are considered to be caused by tourists0",
   },
     
      /* =========================
