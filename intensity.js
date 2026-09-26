@@ -230,11 +230,39 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------
   // 5) Time period slider
   // ------------------------
-  const periodSet = new Set();
+  const activePeriodSet = new Set();
   incidentsData.forEach(entry => periodsOf(entry).forEach(p => {
-    if (p) periodSet.add(p);
+    if (p) activePeriodSet.add(p);
   }));
-  const periods = Array.from(periodSet).sort();
+  const activePeriods = Array.from(activePeriodSet).sort();
+
+  // Build a CONTINUOUS weekly timeline spanning from the first to the last
+  // active week, instead of only the weeks that happen to have an incident.
+  // Otherwise the slider silently skips straight over quiet stretches (e.g.
+  // jumping from week 3 to week 40 as if they were adjacent), which hides
+  // real gaps in activity and makes the timeline misleading.
+  const periods = [];
+  if (activePeriods.length > 0) {
+    const keyToMs = key => {
+      const [y, m, d] = key.split('-').map(Number);
+      return Date.UTC(y, m - 1, d);
+    };
+    const msToKey = ms => {
+      const d = new Date(ms);
+      return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}-${String(d.getUTCDate()).padStart(2, '0')}`;
+    };
+    const startMs = keyToMs(activePeriods[0]);
+    const endMs = keyToMs(activePeriods[activePeriods.length - 1]);
+    for (let ms = startMs; ms <= endMs; ms += MS_PER_WEEK) periods.push(msToKey(ms));
+  }
+
+  // Total NEW incidents landing in a given week, regardless of the
+  // cumulative toggle - used purely to decide playback pacing below.
+  function newIncidentsInPeriod(periodIndex) {
+    let total = 0;
+    incidentsData.forEach(e => { total += weightForPeriod(e, periodIndex, false); });
+    return total;
+  }
   const monthAbbrShort = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function periodLabel(p) {
     // p is the Monday of the week, as "YYYY-MM-DD"
@@ -375,15 +403,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   let playTimer = null;
   const playBtn = document.getElementById('playPause');
-  playBtn.addEventListener('click', () => {
-    if (playTimer) { clearInterval(playTimer); playTimer = null; playBtn.textContent = '▶ Play'; return; }
-    playBtn.textContent = '⏸ Pause';
-    playTimer = setInterval(() => {
+  const PLAY_DELAY_ACTIVE = 900;  // pause here so a week with real incidents is easy to read
+  const PLAY_DELAY_QUIET = 120;   // glide through quiet weeks instead of dwelling on empty ones
+  function scheduleNextFrame() {
+    const periodIndex = parseInt(slider.value, 10);
+    const delay = newIncidentsInPeriod(periodIndex) > 0 ? PLAY_DELAY_ACTIVE : PLAY_DELAY_QUIET;
+    playTimer = setTimeout(() => {
       let next = parseInt(slider.value, 10) + 1;
       if (next > parseInt(slider.max, 10)) next = 0;
       slider.value = next;
       render();
-    }, 900);
+      scheduleNextFrame();
+    }, delay);
+  }
+  playBtn.addEventListener('click', () => {
+    if (playTimer) { clearTimeout(playTimer); playTimer = null; playBtn.textContent = '▶ Play'; return; }
+    playBtn.textContent = '⏸ Pause';
+    scheduleNextFrame();
   });
   document.getElementById('modeCountry').addEventListener('click', () => setMode('country'));
   document.getElementById('modeSubdivision').addEventListener('click', () => setMode('subdivision'));
