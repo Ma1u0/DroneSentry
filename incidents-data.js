@@ -2648,7 +2648,7 @@ type: 'drone',      // used for filtering
 risk: 'red',
 place: 'others',
   year: ['2025', '2026'],  
-  month: ['11', '08'],  
+  month: ['11', '08', '09'],  
   country: "Chilia Veche, Romania 🇷🇴´",
 
   incidents: [
@@ -2780,20 +2780,32 @@ place: 'others',
     country: "​​Băsești, Maramureș County, Romania 🇷🇴",
   },
 
-      {
+  {
     lat: 44.833333,
     lng: 27.116667,
     type: 'drone',      // used for filtering
     risk: 'red',
     place: 'others',
-    year: '2026',
-     month: '07',
-    popupType: 'Crash site', // shown in popup
+  year: ['2026',],  
+  month: ['07', '09'],  
+  country: "​​Padina, Buzău County, Romania 🇷🇴",
+
+  incidents: [
+    {
+   popupType: 'Crash site', // shown in popup
     date: ' 24 July 2026',
     details: "A Shahed drone entered Romanian airspace and caused F-16 jets to destroy the drone near Padina.",
     link: "https://www.digi24.ro/stiri/actualitate/social/nicusor-dan-un-avion-f-16-a-doborat-o-drona-in-spatiul-aerian-romanesc-3876755",
-    country: "​​Padina, Buzău County, Romania 🇷🇴",
-  },
+    },
+    
+    {
+      popupType: 'Drone incursion',
+      date: ' 26 Sep 2026, 23:32 - 00:48',
+      details: "A RO-alert was called at 23:32 in northern Tulcea county. Two Spanish F-18 jets and a Romanian IAR-330 SOCAT helicopter were scrambled. The drone entered Romanian airspace near Chilia Veche for a few minutes before radars lost signal in the Pardina area. The RO-alert ended at 00:48. ",
+      link: "https://english.mapn.ro/cpresa/6874_Press-Information",
+    },
+  ]
+},
 
     {
     lat: 45.154167,
@@ -3157,6 +3169,21 @@ place: 'others',
     details:  "A small-sized drone has been flying in Romanian airspace for approximately four minutes before crashing near Solca. No damage has been reported. A RO-alert has been issued at 06:26. ",
     link: "https://english.mapn.ro/cpresa/6871_Update-–-Press-Release",
     country: "Solca, Romania 🇷🇴"
+   },
+
+      {
+    lat: 45.183333,
+    lng: 28.666667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Drone incursion', // shown in popup
+    date: '27 Sep 2026, 20:35 - 22:05',
+    details: "A RO-alert was sent to residents of Tulcea county at 20:35 after a drone was detected on the Ukrainian side near Chilia Veche. The drone entered Romanian airspace near Ceatalchioi and stayed for 10 minutes before disappearing from Romanian radars near Somova. The RO-alert ended at 22:05",
+    link: "https://english.mapn.ro/cpresa/6875_Press-Information",
+    country: "Somova, Romania 🇷🇴"
    },
    
  /* =========================
