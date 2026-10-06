@@ -3221,7 +3221,7 @@ place: 'others',
     popupType: 'Crash site', // shown in popup
     date: '29 Sep 2026, morning',
     details: "A citizen reported debris, of what seems to be a drone, on arable land. No damage or casualties were caused.",
-    link: "https://www.euronews.com/2026/10/05/drone-reportedly-hits-ship-in-black-sea-killing-two-and-injuring-11",
+    link: "https://english.mapn.ro/cpresa/6876_press-information",
     country: "Insula Mare a Brăilei, Romania 🇷🇴"
    },
 
