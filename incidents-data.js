@@ -2960,22 +2960,31 @@ place: 'others',
     link: "https://www.digi24.ro/amphtml/stiri/actualitate/video-fragment-de-drona-gasit-pe-plaja-din-saturn-turistii-au-fost-evacuati-3906961",
     country: "Saturn, Romania 🇷🇴",
   },
+       {
+  lat: 45.32358,
+  lng: 28.82937,
+  type: 'drone',      // used for filtering
+  risk: 'yellow',
+  place: 'others',
+  year: '2026',
+  month: ['08', '10'],  
+  country: "Plauru, Romania 🇷🇴",
 
-      {
-    lat: 45.32358,
-    lng: 28.82937,
-    type: 'drone',      // used for filtering
-    risk: 'yellow',
-    place: 'others',
-    year: '2026',
-     month: '08',
+  incidents: [
+    {
     popupType: 'Crash site', // shown in popup
     date: ' 14 Aug 2026, around 18:20 ',
-    details: "A drone was discovered near Plauru in Tulcea County. Specialists were already sent to the area to determine the type of drone and who it belongs to. <br> Plauru is located 2 kilometers from the Ukrainian border.",
-    note: "This marks the third drone related incident on August 14th in Romania",
+    details: "A drone was discovered near Plauru in Tulcea County. Specialists were already sent to the area to determine the type of drone and who it belongs to. <br> Plauru is located 2 kilometers from the Ukrainian border. <br><br> This marks the third drone related incident on August 14th in Romania",
     link: "https://www.euronews.ro/articole/inca-o-drona-gasita-de-ministerul-apararii-in-aceeasi-zi-aparatul-de-zbor-a-fost",
-    country: "Plauru, Romania 🇷🇴",
-  }, 
+    },
+    {
+      popupType: 'Drone incursion',
+      date: '02 Oct 2026, around 05:00',
+      details: "An unknown aerial object, presumably a drone, in the area of Plauru and caused a fire. No material damage or casualties were reported.",
+      link: "https://english.mapn.ro/cpresa/6878_press-information",
+     },
+  ]
+},
 
           {
     lat: 45.783333,
@@ -3199,6 +3208,21 @@ place: 'others',
     details: "A RO-alert was sent to residents of Tulcea county at 20:35 after a drone was detected on the Ukrainian side near Chilia Veche. The drone entered Romanian airspace near Ceatalchioi and stayed for 10 minutes before disappearing from Romanian radars near Somova. The RO-alert ended at 22:05",
     link: "https://english.mapn.ro/cpresa/6875_Press-Information",
     country: "Somova, Romania 🇷🇴"
+   },
+
+      {
+    lat: 45.021667,
+    lng: 28.049167,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '29 Sep 2026, morning',
+    details: "A citizen reported debris, of what seems to be a drone, on arable land. No damage or casualties were caused.",
+    link: "https://www.euronews.com/2026/10/05/drone-reportedly-hits-ship-in-black-sea-killing-two-and-injuring-11",
+    country: "Insula Mare a Brăilei, Romania 🇷🇴"
    },
 
    {
