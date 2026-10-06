@@ -465,6 +465,21 @@ const incidentsData = [
     link: "https://www.bta.bg/en/news/bulgaria/1192191-bulgarian-navy-destroys-unmanned-aerial-vehicles-in-the-black-sea-region",
     country: "Pasha Dere, Bulgaria 🇧🇬",
     },
+
+     {
+    lat: 42.883,
+    lng: 29.475,
+    type: 'drone',      // used for filtering
+    risk: 'orange',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: ' 06 Oct 2026, around 03:00',
+    details: "Two vessels were attacked within Bulgarian exclusive econimic waters, around 70 nautical miles East of Byala. One vessel was the Togo-flagged ALFA WATAN travelling from Turkey to Sulina, Romania. The vessel sank following the damage and so far no survivors have been found. The second vessel was the Palau-flagged ABLE which caught fire following the attack. All 18 sailors have survived but two of them had to hospitalised. The cargo of the ships is unknown. <br><br> Bulgaria will invoke neither NATO Article IV nor V  ",
+    link: "https://www.euronews.com/2026/10/06/drones-hit-two-ships-off-coast-of-bulgaria-as-government-calls-emergency-meeting",
+    country: "Bulgarian EEZ, Bulgaria 🇧🇬",
+    },
     
    /* =========================
        C Z E C H I A
