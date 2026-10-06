@@ -476,7 +476,7 @@ const incidentsData = [
     month: '10',
     popupType: 'Crash site', // shown in popup
     date: ' 06 Oct 2026, around 03:00',
-    details: "Two vessels were attacked within Bulgarian exclusive econimic waters, around 70 nautical miles East of Byala. One vessel was the Togo-flagged ALFA WATAN travelling from Turkey to Sulina, Romania. The vessel sank following the damage and so far no survivors have been found. The second vessel was the Palau-flagged ABLE which caught fire following the attack. All 18 sailors have survived but two of them had to hospitalised. The cargo of the ships is unknown. <br><br> Bulgaria will invoke neither NATO Article IV nor V  ",
+    details: "Two Turkish-owned vessels were attacked within Bulgarian exclusive econimic waters, around 70 nautical miles East of Byala. One vessel was the Togo-flagged ALFA WATAN travelling from Turkey to Sulina, Romania. The vessel sank following the damage and so far no survivors have been found. The second vessel was the Palau-flagged ABLE which caught fire following the attack. All 18 sailors have survived but two of them had to hospitalised. The cargo of the ships is unknown. <br><br> Bulgaria will invoke neither NATO Article IV nor V  ",
     link: "https://www.euronews.com/2026/10/06/drones-hit-two-ships-off-coast-of-bulgaria-as-government-calls-emergency-meeting",
     country: "Bulgarian EEZ, Bulgaria 🇧🇬",
     },
@@ -3199,6 +3199,21 @@ place: 'others',
     details: "A RO-alert was sent to residents of Tulcea county at 20:35 after a drone was detected on the Ukrainian side near Chilia Veche. The drone entered Romanian airspace near Ceatalchioi and stayed for 10 minutes before disappearing from Romanian radars near Somova. The RO-alert ended at 22:05",
     link: "https://english.mapn.ro/cpresa/6875_Press-Information",
     country: "Somova, Romania 🇷🇴"
+   },
+
+   {
+    lat: 44.395833,
+    lng: 29.592778,
+    type: 'drone',      // used for filtering
+    risk: 'orange',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '05 Oct 2026, around 11:00',
+    details: "Royad Mammadov, a Turkish-owned vessels travelling from Ismail, Ukraine to Ravenna, Italy was hit by a drone causing a fire, The Santi Kitts and Nevis-flagged ship was carrying grain and was hit by aerial and sea drones. Two crew members were killed, three were wounded, and one is still missing.",
+    link: "https://www.euronews.com/2026/10/05/drone-reportedly-hits-ship-in-black-sea-killing-two-and-injuring-11",
+    country: "Romanian EEZ, Romania 🇷🇴"
    },
    
  /* =========================
