@@ -492,7 +492,7 @@ month: 10,
 popupType: 'Crash site', // shown in popup
  date: '13 Oct 2026, ~01:30',
 details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> CHELSEA 3 was sailing from Giresun, Turkey to Giurgiuleşti, Moldova until it was ultimately hit by three drones around 33 kilometers from the Bulgarian coast. <br> The crew was rescued and only 5 members suffered minor injuries. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
-link: "https://www.euronews.com/2026/10/06/drones-hit-two-ships-off-coast-of-bulgaria-as-government-calls-emergency-meeting",
+link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
 country: "Bulgarian EEZ, near Bjala, Bulgaria 🇧🇬",
     },
 
@@ -507,8 +507,8 @@ year: '2026',
 month: 10,
 popupType: 'Crash site', // shown in popup
  date: '13 Oct 2026, ~01:30',
-details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> AZOV CONCORD was sailing from Brăila, Romania to Izmir, Turkey. One of the crew members was rescued. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
-link: "https://www.euronews.com/2026/10/06/drones-hit-two-ships-off-coast-of-bulgaria-as-government-calls-emergency-meeting",
+details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> AZOV CONCORD was sailing from Brăila, Romania to Izmir, Turkey. One of the crew members was rescued, the rest is missing. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
+link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
 country: "Bulgarian EEZ, near Krapez, Bulgaria 🇧🇬",
     },
   
