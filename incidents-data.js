@@ -498,7 +498,7 @@ country: "Bulgarian EEZ, near Bjala, Bulgaria 🇧🇬",
 
    
      {
-lat:   43.6260°,
+lat:   43.6260,
 lng:   28.9517,
 type: 'drone',        // used for filtering
 risk: 'orange',
