@@ -2636,7 +2636,7 @@ country: "Bulgarian EEZ, near Krapez, Bulgaria 🇧🇬",
   risk: 'red',
   place: 'others',
  year: ['2025', '2026'],  
-  month: ['09', '07'],  
+  month: ['09', '07', '10'],  
  country: "Tulcea county, Romania 🇷🇴",
 
   incidents: [
@@ -2657,6 +2657,12 @@ country: "Bulgarian EEZ, near Krapez, Bulgaria 🇧🇬",
       date: ' 13 Aug 2026, 09:02',
       details: "At 09:02 a drone was detected near the border to Romania with two F-16s being scrambled at 09:20. The drone entered Romanian airspace for two minutes before reentering Ukrainian airspace, where explosions were reported shortly afterwards.",
       link: "https://x.com/MApNRomania/status/2087788637597426113?s=20",
+     },
+         {
+      popupType: 'Drone incursion',
+      date: ' 14 Oct 2026, 20:04 - 20:13',
+      details: "Two objects entered Romanian airspace at 20:04. Contact was lost with one of the objects while the other left Romanian airspace for Ukraine at 20:13. Two Spanish F-18 aircraft were scrambled. ",
+      link: "https://english.mapn.ro/cpresa/6886_press-information",
      },
   ]
 },
@@ -2861,7 +2867,7 @@ place: 'others',
     risk: 'orange',
     place: 'others',
     year: '2026',
-     month: ['04', '05', '09'],
+     month: ['04', '05', '09', '10'],
   country: "​​Sulina / Sulina–Chilia area, Romania 🇷🇴",
 
   incidents: [
@@ -2882,6 +2888,27 @@ place: 'others',
       date: ' 11 Sep 2026, 13:30',
       details: "Drone debris was found between Sulina and Sfântu Gheorghe. The drone was not armed with explosives",
       link: "https://www.digi24.ro/stiri/actualitate/social/fragmente-de-drone-unele-cu-explozibil-gasite-in-constanta-si-tulcea-dar-si-in-marea-neagra-interventii-ale-specialistilor-3944583",
+     },
+
+        {
+      popupType: 'Drone incursion',
+      date: ' 14 Oct 2026, 10:19 - 11:22',
+      details: "A drone entered Romanian airspace shortly before reentering Ukrainian airspace where it was shot down. A RO-alert was called 10:19 and ceased at 11:22.",
+      link: "https://english.mapn.ro/cpresa/6884_press-release",
+     },
+
+      {
+      popupType: 'Drone incursion',
+      date: ' 14 Oct 2026, 17:38 - 17:46',
+      details: "An aerial object entered Romanian airspace about 22 kilometers northeast of Sulina and left at 17:46. A RO-alert was called at 17:39 and ceased at 19:03.",
+      link: "https://english.mapn.ro/cpresa/6885_press-information",
+     },
+
+           {
+      popupType: 'Drone incursion',
+      date: ' 15 Oct 2026, 01:34 - 01:35',
+      details: "An aerial object entered Romanian airspace southeast of Sulina for approximately one minute before it disappeared from the radars.",
+      link: "https://english.mapn.ro/cpresa/6887_press-release",
      },
   ]
 },
