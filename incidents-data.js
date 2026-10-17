@@ -3298,6 +3298,21 @@ place: 'others',
     link: "https://www.euronews.com/2026/10/05/drone-reportedly-hits-ship-in-black-sea-killing-two-and-injuring-11",
     country: "Romanian EEZ, Romania 🇷🇴"
    },
+
+      {
+    lat: 44.70,
+    lng: 30.45,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Drone incursion / Crash site', // shown in popup
+    date: '17 Oct 2026, 17:59 - 18:05',
+    details: "Two drones entered Romanian airspace and both have been shot down over Romanian waters by Romanian F-16s. <br> The first drone entered at 17:59 and was shot down at 18:01. <br> The second drone entered at 18:01 and shot down at 18:05",
+    link: "https://english.mapn.ro/cpresa/6888_Press-Release",
+    country: "Romanian territorial waters, Romania 🇷🇴"
+   },
    
  /* =========================
        S P A I N
