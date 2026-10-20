@@ -1794,6 +1794,21 @@ country: "Bulgarian EEZ, near Krapez, Bulgaria 🇧🇬",
     country: "Pratkūnai, Lithuania 🇱🇹"
   },
 
+     {
+    lat:  56.153141,
+    lng:  24.5376169,
+    type: 'drone',      // used for filtering
+    risk: 'brown',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Airspace incursion / crash site', // shown in popup
+    date: '18 Oct 2026, 07:00 - 08:11',
+    details: "Lithuanian radars spotted a drone coming from Poland in the direction of Lithuania causing NATO jets to  be scrambled. Citizens in Šiauliai and Panevėžys districts were forced to evacuate into bunkers. The debris of the drone was later found near the village of Juodžionys. <br> According to Lithuanian authorities the drone was part of Ukraine's attack on St. Petersburg ",
+    link: "https://www.lrt.lt/en/news-in-english/19/3087078/lithuanian-minister-says-sunday-drone-crash-was-part-of-ukrainian-attack-on-st-petersburg?srsltid=AU7gw4WGa8_UIa-jxZMmR0sV72tILEzuH0N853b4GxLlEKWt0xVrDRL0",
+    country: "Juodžionys, Lithuania 🇱🇹"
+  },
+
    /* =========================
         L U X E M B O U R G
     ========================= */
