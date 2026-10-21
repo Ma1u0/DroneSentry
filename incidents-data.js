@@ -3344,6 +3344,21 @@ place: 'others',
     link: "https://english.mapn.ro/cpresa/6888_Press-Release",
     country: "Romanian territorial waters, Romania 🇷🇴"
    },
+
+   {
+    lat: 45.11972,
+    lng: 27.14861,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '21 Oct 2026',
+    details: "A local resident called the police at 11:28 after finding a drone wreckage in a field outside of Moșești. One wing of the drone has a span of 2 meters and the drone had yellow numerical markings. The debris has been found in a radius of 100 meters. <br> The drone wasn't detected by Romanian radars. It is unknown when the drone crashed or who it belongs to.",
+    link: "https://www.digi24.ro/stiri/actualitate/drona-prabusita-in-judetul-buzau-un-localnic-a-sunat-la-112-iar-specialisti-mapn-si-sri-fac-verificari-4002091",
+    country: "Moșești, Romania 🇷🇴"
+   },
    
  /* =========================
        S P A I N
