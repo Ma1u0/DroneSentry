@@ -1070,6 +1070,22 @@ country: "Bulgarian EEZ, near Krapez, Bulgaria 🇧🇬",
     },
   ]
 },
+
+       {
+    lat: 43.11944,
+    lng: 5.91639,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'militarybases',
+    year: '2026',
+    month: '10',
+    popupType: 'Drone sighting', // shown in popup
+    date: ' 05 - 16 Oct 2026, at night',
+    details: "Multiple large drones flew over the naval base in Toulon on multiple nights. The sightings happened during the join Typhon exercises aimed at protecting the port. <br> The exact model and number of drones couldn’t be determined.",
+    link: "https://www.lemonde.fr/pixels/article/2026/10/21/toulon-des-drones-non-autorises-ont-survole-plusieurs-sites-militaires-selon-la-marine-nationale_6798224_4408996.html",
+    country: "Toulon naval base, France 🇫🇷",
+    note: "The naval base in Toulon is home to the aircraft carrier 'Charles de Gaule' and to nuclear submarines",
+     },
     
      /* =========================
        G E R M A N Y
