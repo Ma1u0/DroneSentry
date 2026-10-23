@@ -3327,7 +3327,7 @@ place: 'others',
     date: '05 Oct 2026, around 11:00',
     details: "Royad Mammadov, a Turkish-owned vessels travelling from Ismail, Ukraine to Ravenna, Italy was hit by a drone causing a fire, The Santi Kitts and Nevis-flagged ship was carrying grain and was hit by aerial and sea drones. Two crew members were killed, three were wounded, and one is still missing.",
     link: "https://www.euronews.com/2026/10/05/drone-reportedly-hits-ship-in-black-sea-killing-two-and-injuring-11",
-    country: "Romanian EEZ, Romania 🇷🇴"
+    country: "Royad Mammadov, Romanian EEZ, Romania 🇷🇴"
    },
 
       {
@@ -3358,6 +3358,21 @@ place: 'others',
     details: "A local resident called the police at 11:28 after finding a drone wreckage in a field outside of Moșești. One wing of the drone has a span of 2 meters and the drone had yellow numerical markings. The debris has been found in a radius of 100 meters. <br> The drone wasn't detected by Romanian radars. It is unknown when the drone crashed or who it belongs to.",
     link: "https://www.digi24.ro/stiri/actualitate/drona-prabusita-in-judetul-buzau-un-localnic-a-sunat-la-112-iar-specialisti-mapn-si-sri-fac-verificari-4002091",
     country: "Moșești, Romania 🇷🇴"
+   },
+
+      {
+    lat: 45.11972,
+    lng: 27.14861,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '23 Oct 2026, around 10:00',
+    details: "A drone has hit the Comoros-flagged vessel 'KHORYV' which sailed from Eregli, 🇹🇷 to Sulina, 🇷🇴. The incident happened 13 nautical miles off Constanța, right outside of Romanian territorial waters. <br> One of the sailors is dead while three are missing. <br><br> Romanian President Dan blames Russia for this incident and calls it a 'part ‌of ⁠Russia's escalation process in its war in Ukraine' ",
+    link: "https://www.reuters.com/world/romania-blames-russia-drone-that-sinks-cargo-ship-1-killed-3-missing-2026-10-23/",
+    country: "KHORYV, Romanian EEZ, Romania 🇷🇴"
    },
    
  /* =========================
