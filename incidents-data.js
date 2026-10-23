@@ -3361,8 +3361,8 @@ place: 'others',
    },
 
       {
-    lat: 44.1800,
-    lng: 28.9321,
+    lat: 44.17293,
+    lng: 28.94021,
     type: 'drone',      // used for filtering
     risk: 'orange',
     place: 'others',
