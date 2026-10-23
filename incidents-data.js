@@ -3361,10 +3361,10 @@ place: 'others',
    },
 
       {
-    lat: 45.11972,
-    lng: 27.14861,
+    lat: 44.1800,
+    lng: 28.9321,
     type: 'drone',      // used for filtering
-    risk: 'yellow',
+    risk: 'orange',
     place: 'others',
     year: '2026',
      month: '10',
