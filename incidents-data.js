@@ -478,7 +478,7 @@ popupType: 'Crash site', // shown in popup
 date: ' 06 Oct 2026, around 03:00',
 details: "Two Turkish-owned vessels were attacked within Bulgarian exclusive econimic waters, around 70 nautical miles East of Byala. One vessel was the Togo-flagged ALFA WATAN travelling from Turkey to Sulina, Romania. The vessel sank following the damage and so far no survivors have been found. The second vessel was the Palau-flagged ABLE which caught fire following the attack. All 18 sailors have survived but two of them had to hospitalised. The cargo of the ships is unknown. <br><br> Bulgaria will invoke neither NATO Article IV nor V  ",
 link: "https://www.euronews.com/2026/10/06/drones-hit-two-ships-off-coast-of-bulgaria-as-government-calls-emergency-meeting",
-country: "Bulgarian EEZ, Bulgaria 🇧🇬",
+country: "ALFA WATAN / ABLE Bulgarian EEZ, Bulgaria 🇧🇬",
     },
 
      {
@@ -493,7 +493,7 @@ popupType: 'Crash site', // shown in popup
  date: '13 Oct 2026, ~01:30',
 details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> CHELSEA 3 was sailing from Giresun, Turkey to Giurgiuleşti, Moldova until it was ultimately hit by three drones around 33 kilometers from the Bulgarian coast. <br> The crew was rescued and only 5 members suffered minor injuries. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
 link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
-country: "Bulgarian EEZ, near Bjala, Bulgaria 🇧🇬",
+country: "CHELSEA 3, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
 
    
@@ -509,7 +509,7 @@ popupType: 'Crash site', // shown in popup
  date: '13 Oct 2026, ~01:30',
 details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> AZOV CONCORD was sailing from Brăila, Romania to Izmir, Turkey. One of the crew members was rescued, the rest is missing. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
 link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
-country: "Bulgarian EEZ, near Krapez, Bulgaria 🇧🇬",
+country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
   
  
