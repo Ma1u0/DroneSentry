@@ -2042,22 +2042,33 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     link: "https://nos.nl/regio/overijssel/artikel/719487-drone-mysterie-boven-gasunie-in-ommen-herkomst-onbekend-gemeente-zweeg-na-melding",
     country: "Vilsteren, Netherlands 🇳🇱",
   },
+   
+{
+  lat: 51.338056,
+lng: 3.8275,
+  type: 'drone',        // used for filtering
+  risk: 'yellow',
+  place: 'infrastructure',
+  year: '2025',
+  month: '11',
+ country: "Port of Terneuzen, Netherlands 🇳🇱",,
 
+  incidents: [
+    {
+      popupType: 'Drone sighting',
+     date: '12 Nov 2025, around midnight',
+    details: "Around midnight four drones have been reported over Vlissingen and Terneuzen. Wether this incident is connected to the ones in Borssele and Domburg, which happened on that evening, is unknown.",
+    link: "https://www.ad.nl/binnenland/vorig-jaar-ook-zwerm-onbekende-drones-bij-kerncentrale-borssele~a28e1b8d/?slug_rd=1",
     
-  {
-    lat: 51.338056,
-    lng: 3.8275,
-    type: 'drone',      // used for filtering
-    risk: 'green',
-    place: 'others',
-    year: '2025',
-     month: '11',
-    popupType: 'Drone sighting', // shown in popup
+    },
+    {
+      popupType: 'Drone sighting',
     date: '17 Nov 2025',
     details: "According to the port authority NSP, 'an unprecedented amount of drones' was seen over the port. Drones were seen over the chemical company Dow. The police was unable to independently verify those sightings",
     link: "https://nos.nl/artikel/2591151-drones-gezien-boven-havengebied-terneuzen-politie-vindt-niets",
-    country: "Port of Terneuzen, Netherlands 🇳🇱",
-  },
+    }
+  ]
+},
 
   {
     lat: 51.566433,
@@ -2117,6 +2128,152 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     details: "A drone has been spotted over Drakensteyn Castle which is home to former Queen Beatrix. ",
     link: "https://www.brusselstimes.com/2071336/secret-drone-sightings-near-dutch-palace-raise-security-questions",
     country: "Drakensteyn Castle, Netherlands 🇳🇱",
+  },
+
+{
+  lat: 53.448333,
+  lng: 6.831111,
+  type: 'drone',        // used for filtering
+  risk: 'yellow',
+  place: 'infrastructure',
+  year: '2026',
+  month: '10',
+  country: "Port of Eemshaven , Netherlands 🇳🇱",
+
+  note: "Eemshaven is a major industrial port and home to critical infrastructure and data centers. It is also an important port for NATO logistics and LNG terminals.",
+
+  incidents: [
+    {
+      popupType: 'Drone sighting',
+      date: '03 Oct 2026, sightings between 00:30 and 07:30',
+      details: "An employee at the port reports seeing drones on multiple nights. Police was called and was able to confirm the sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
+      link: "https://www.rtvnoord.nl/112/1444701/onbekende-drones-gespot-boven-de-eemshaven-baart-ons-wel-zorgen"
+    },
+   {
+      popupType: 'Drone sighting',
+      date: '10 Oct 2026, sightings between 00:30 and 07:30',
+      details: "The police received multiple reports of drone sightings over the weekend. After arriving at the scene the officers were able to confirm the sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
+      link: "https://omroepeemsdelta.nl/live-in-de-studio/"
+    },
+        {
+      popupType: 'Drone sighting',
+      date: '11 Oct 2026, sightings between 00:30 and 07:30',
+      details: "The police received multiple reports of drone sightings over the weekend. After arriving at the scene the officers were able to confirm the sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
+      link: "https://omroepeemsdelta.nl/live-in-de-studio/"
+    },
+             {
+      popupType: 'Drone sighting',
+      date: '17/18 Oct 2026, sightings between 00:30 and 07:30',
+      details: "Police once again received reports of a drone sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
+      link: "https://www.zeelandnet.nl/nieuws/weer-drones-boven-eemshavengebied-in-groningen?utm_source=chatgpt.com"
+    },
+  ]
+},
+
+     {
+    lat: 53.1625,
+    lng: 6.860556,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2026',
+     month: '10',
+    popupType: 'Drone sighting', // shown in popup
+    date: 'Reported on 20 Oct 2026, date of the incident unknown',
+    details: "Multiple drone sightings have been reported in East Groningen. <br> Zuidbroek is one of the locations and is home to a nitrogen facotry which prepares imported gas for later use by households and comapnies. ",
+    link: "https://www.telegraaf.nl/binnenland/onbekende-drones-boven-oost-groningen-gesignaleerd/163330927.html",
+    country: "Zuidbroek, Netherlands 🇳🇱",
+  },
+
+        {
+    lat: 53.1682,
+    lng: 6.9212,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2026',
+     month: '10',
+    popupType: 'Drone sighting', // shown in popup
+    date: 'Reported on 20 Oct 2026, date of the incident unknown',
+    details: "Multiple drone sightings have been reported in East Groningen. <br> Zonnepark Eekerpolder is one of the locations and is the largest solar park in the Netherlands. ",
+    link: "https://www.telegraaf.nl/binnenland/onbekende-drones-boven-oost-groningen-gesignaleerd/163330927.html",
+    country: "Zonnepark Eekerpolder, Netherlands 🇳🇱",
+  },
+
+           {
+    lat: 53.139167,
+    lng: 6.925833,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2026',
+     month: '10',
+    popupType: 'Drone sighting', // shown in popup
+    date: 'Reported on 20 Oct 2026, date of the incident unknown',
+    details: "Multiple drone sightings have been reported in East Groningen. <br> Meeden is one of the locations and hosts a major high-voltage substation. ",
+    link: "https://www.telegraaf.nl/binnenland/onbekende-drones-boven-oost-groningen-gesignaleerd/163330927.html",
+    country: "Meeden, Netherlands 🇳🇱",
+  },
+
+              {
+    lat: 51.4,
+    lng: 3.716667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2025',
+     month: '11',
+    popupType: 'Drone sighting', // shown in popup
+    date: '09 Nov 2025',
+    details: "The martime pilot of the US-flagged MAERSK MONTANA reported three drones flying over the vessel which was headed towards Antwerp. The drones disappeared shortly afterwards.",
+    link: "https://www.ad.nl/binnenland/vorig-jaar-ook-zwerm-onbekende-drones-bij-kerncentrale-borssele~a28e1b8d/?slug_rd=1",
+    country: "MAERSK MONTANA, Western Scheldt, Netherlands 🇳🇱",
+  },
+
+   {
+    lat: 51.4,
+    lng: 3.716667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2025',
+     month: '11',
+    popupType: 'Drone sighting', // shown in popup
+    date: '12 Nov 2025, early evening',
+    details: "Six or seven drones were seen around Domburg. Wether this incident is connected to the ones in Terneuzen, Vlissingen, and Borssele, which happened later that evening, is unknown.",
+    link: "https://www.ad.nl/binnenland/vorig-jaar-ook-zwerm-onbekende-drones-bij-kerncentrale-borssele~a28e1b8d/?slug_rd=1",
+    country: "Domburg, Netherlands 🇳🇱",
+  },
+
+   
+   {
+    lat: 51.446389,
+    lng: 3.579722,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2025',
+     month: '11',
+    popupType: 'Drone sighting', // shown in popup
+    date: '12 Nov 2025, around midnight',
+    details: "Around midnight four drones have been reported over Vlissingen and Terneuzen. Wether this incident is connected to the ones in Borssele and Domburg, which happened on that evening, is unknown.",
+    link: "https://www.ad.nl/binnenland/vorig-jaar-ook-zwerm-onbekende-drones-bij-kerncentrale-borssele~a28e1b8d/?slug_rd=1",
+    country: "Vlissingen, Netherlands 🇳🇱",
+  },
+
+      {
+    lat: 51.43194,
+    lng: 3.71667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'infrastructure',
+    year: '2025',
+     month: '11',
+    popupType: 'Drone sighting', // shown in popup
+    date: '12 Nov 2025, evening',
+    details: "A swarm of drones was seen near the power plant and it most likely breached the no-fly zone. After flying around the power plant at an altitude of 500 meters, the swarm flew towards the sea. The drones reportedly did not pose a threat to the power plant. <br> Wether this incident is connected to the ones in Terneuzen, Vlissingen, and Domburg, which happened on that evening, is unknown.",
+    link: "https://www.ad.nl/binnenland/vorig-jaar-ook-zwerm-onbekende-drones-bij-kerncentrale-borssele~a28e1b8d/?slug_rd=1",
+    country: "Borssele NPP, Netherlands 🇳🇱",
   },
     
      /* =========================
