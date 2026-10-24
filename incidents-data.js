@@ -2153,13 +2153,19 @@ lng: 3.8275,
       popupType: 'Drone sighting',
       date: '10 Oct 2026, sightings between 00:30 and 07:30',
       details: "The police received multiple reports of drone sightings over the weekend. After arriving at the scene the officers were able to confirm the sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
-      link: "https://omroepeemsdelta.nl/live-in-de-studio/"
+      link: "https://omroepeemsdelta.nl/drones-boven-de-eemshaven-politie-doet-onderzoek-update/"
     },
         {
       popupType: 'Drone sighting',
       date: '11 Oct 2026, sightings between 00:30 and 07:30',
       details: "The police received multiple reports of drone sightings over the weekend. After arriving at the scene the officers were able to confirm the sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
-      link: "https://omroepeemsdelta.nl/live-in-de-studio/"
+      link: "https://omroepeemsdelta.nl/drones-boven-de-eemshaven-politie-doet-onderzoek-update/"
+    },
+             {
+      popupType: 'Drone sighting',
+      date: '13 Oct 2026, sightings between 00:30 and 07:30',
+      details: "Police once again received reports of a drone sighting. <br> Groningen Seaports was able to confirm that these drones did not belong to them.",
+      link: "https://omroepeemsdelta.nl/drones-boven-de-eemshaven-politie-doet-onderzoek-update/"
     },
              {
       popupType: 'Drone sighting',
