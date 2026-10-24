@@ -2051,7 +2051,7 @@ lng: 3.8275,
   place: 'infrastructure',
   year: '2025',
   month: '11',
- country: "Port of Terneuzen, Netherlands 🇳🇱",,
+ country: "Port of Terneuzen, Netherlands 🇳🇱",
 
   incidents: [
     {
@@ -2066,7 +2066,7 @@ lng: 3.8275,
     date: '17 Nov 2025',
     details: "According to the port authority NSP, 'an unprecedented amount of drones' was seen over the port. Drones were seen over the chemical company Dow. The police was unable to independently verify those sightings",
     link: "https://nos.nl/artikel/2591151-drones-gezien-boven-havengebied-terneuzen-politie-vindt-niets",
-    }
+    },
   ]
 },
 
