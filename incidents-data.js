@@ -2231,8 +2231,8 @@ lng: 3.8275,
   },
 
    {
-    lat: 51.4,
-    lng: 3.716667,
+    lat: 51.563333,
+    lng: 3.499833,
     type: 'drone',      // used for filtering
     risk: 'yellow',
     place: 'infrastructure',
