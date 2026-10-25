@@ -77,10 +77,6 @@ html, body { margin:0; height:100%; }
 }
 
 /* Legend */
-.border-key { display:flex; align-items:center; gap:8px; font-size:12px; margin-top:6px; }
-.border-key .line { display:inline-block; width:28px; height:0; flex:none; }
-.border-key .nato { border-top:3px solid #1F4FD8; }
-.border-key .eu { border-top:2px dashed #F2B705; }
 #legend { top:14px; right:14px; width:290px; }
 #legend.collapsed { width:150px; }
 .legend-group-title {
@@ -328,10 +324,6 @@ html, body { margin:0; height:100%; }
     <div class="legend-row"><span class="legend-dot" style="background:#D9B94A"></span> Unknown actor</div>
     <div class="legend-row"><span class="legend-dot" style="background:#4C8A5E"></span> Unverified incident</div>
     <div class="legend-row"><span class="legend-dot" style="background:#3B6EA5"></span> Safety breaches</div>
-
-    <div class="legend-group-title">Borders</div>
-    <div class="legend-row"><span class="border-key"><span class="line nato"></span></span> NATO outer border</div>
-    <div class="legend-row"><span class="border-key"><span class="line eu"></span></span> EU border with non-EU NATO members</div>
   </div>
 </div>
 
@@ -341,8 +333,6 @@ html, body { margin:0; height:100%; }
 
 <!-- Shared incident data (also used by heatmap.js) -->
 <script src="incidents-data.js"></script>
-<script src="borders-data.js"></script>
-<script src="borders.js"></script>
 <script src="map.js"></script>
 
 <script>

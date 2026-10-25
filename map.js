@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }).addTo(map);
   L.control.zoom({ position: 'bottomleft' }).addTo(map);
 
-  // NATO (solid blue) and EU (dashed) country borders
-  addEuNatoBorders(map);
-
   // ------------------------
   // 2ï¸âƒ£ MarkerCluster group
   // ------------------------
