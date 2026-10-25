@@ -52,6 +52,10 @@ html, body { margin:0; height:100%; }
   height:10px; border-radius:3px;
   background: linear-gradient(to right, #ffedd6, #a30000);
 }
+.border-key { display:flex; align-items:center; gap:8px; font-size:12px; margin-top:6px; }
+.border-key .line { display:inline-block; width:28px; height:0; flex:none; }
+.border-key .nato { border-top:3px solid #1F4FD8; }
+.border-key .eu { border-top:2px dashed #F2B705; }
 #legend-labels { display:flex; justify-content:space-between; font-size:11px; color: var(--ink-faint); margin-top:5px; }
 
 #breakdown-content { overflow-y:auto; max-height:50vh; }
@@ -141,6 +145,8 @@ html, body { margin:0; height:100%; }
     <div id="legend-block">
       <div id="legend-gradient"></div>
       <div id="legend-labels"><span>0</span><span>most</span></div>
+      <div class="border-key"><span class="line nato"></span> NATO member</div>
+      <div class="border-key"><span class="line eu"></span> EU member</div>
     </div>
     <div id="breakdown-total"></div>
     <div id="breakdown-content"></div>
@@ -153,6 +159,8 @@ html, body { margin:0; height:100%; }
 <!-- Shared incident data (same file map.js uses) -->
 <script src="incidents-data.js"></script>
 <script src="boundaries-data.js"></script>
+<script src="borders-data.js"></script>
+<script src="borders.js"></script>
 <script src="intensity.js"></script>
 
 <script>
