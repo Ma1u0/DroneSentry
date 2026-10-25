@@ -1,9 +1,10 @@
-// Adds NATO (solid blue) and EU (dashed gold) country borders to a Leaflet map.
-// Uses bordersData from borders-data.js. Lines sit above the map but below markers,
-// and don't catch clicks/hovers, so popups and tooltips keep working.
+// Draws the NATO outer border (solid blue) and the dashed line where EU members
+// meet non-EU NATO members. Data comes from borders-data.js (bordersData).
+// Lines sit above the map but below markers, and don't catch clicks/hovers,
+// so popups and tooltips keep working.
 const BORDER_STYLE = {
-  nato: { color: '#1F4FD8', weight: 3, opacity: 0.9 },
-  eu:   { color: '#F2B705', weight: 1.8, opacity: 1, dashArray: '7 6' }
+  'nato-outer': { color: '#1F4FD8', weight: 3, opacity: 0.9 },
+  'eu-divider': { color: '#F2B705', weight: 2, opacity: 1, dashArray: '7 6' }
 };
 
 function addEuNatoBorders(map) {
@@ -12,13 +13,12 @@ function addEuNatoBorders(map) {
   pane.style.zIndex = 450;
   pane.style.pointerEvents = 'none';
 
-  const make = (flag, style) => L.geoJSON(bordersData, {
-    pane: 'bordersPane',
-    interactive: false,
-    filter: f => f.properties[flag],
-    style: () => Object.assign({ fill: false, lineJoin: 'round' }, style)
-  }).addTo(map);
-
-  make('nato', BORDER_STYLE.nato);
-  make('eu', BORDER_STYLE.eu); // drawn on top so the dashes show over the blue line
+  Object.keys(BORDER_STYLE).forEach(kind => {
+    L.geoJSON(bordersData, {
+      pane: 'bordersPane',
+      interactive: false,
+      filter: f => f.properties.kind === kind,
+      style: () => Object.assign({ fill: false, lineJoin: 'round' }, BORDER_STYLE[kind])
+    }).addTo(map);
+  });
 }
