@@ -1964,6 +1964,81 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Chișinău Airport, Moldova 🇲🇩"
   },
 
+            {
+    lat: 47.8775949,
+    lng: 29.1736613,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '15 Oct 2026, 23:02 - 23:20',
+    details: "A drone entered Moldovan airspace at 23:02 near Ivanovca, Transnistria from Tymkove, Odesa Oblast. At 23:20 it left Moldovan airspace again via Bronnytsia, Vinnytsia Oblast.",
+    link: "https://www.army.md/en/press-releases/inform-30",
+    country: "Ivanovca, Moldova 🇲🇩"
+  },
+
+               {
+    lat: 46.435,
+    lng: 30.0425,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '16 Oct 2026, 03:37 - 03:38',
+    details: "A drone entered Moldovan airspace around Tudora from Starokazachye, Odesa Oblast and left Moldova a minute later on the same trajectory., ",
+    link: "https://www.army.md/en/press-releases/inform-30",
+    country: "Tudora, Moldova 🇲🇩"
+  },
+
+                  {
+    lat: 48.433333,
+    lng: 27.8,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '16 Oct 2026, 03:46 - 03:48',
+    details: "A drone entered Moldovan airspace around Otaci from Mohyliv-Podilskyi, Vinnytsia Oblast. It left at 03:48 near Hadarauti, Ocnița district.",
+    link: "https://www.army.md/en/press-releases/inform-30",
+    country: "Otaci, Moldova 🇲🇩"
+  },
+
+         {
+    lat: 46.494444,
+    lng: 29.923611,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '16 Oct 2026, 05:59 - 06:10',
+    details: "A drone entered Moldovan airspace at 05:59 near Căplani before leaving at 06:00 near Olănești. At 06:09 it reentered Moldovan airspace near Purcari, Ștefan Vodă and left at 06:10 via Dnestrovsc, Transnistria in direction of Hradenytsi, Odesa Oblast.",
+    link: "https://www.army.md/en/press-releases/inform-30",
+    country: "Olănești, Moldova 🇲🇩"
+  },
+
+      {
+    lat: 48.143333,
+    lng: 27.572778,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '16 Oct 2026, 16:22',
+    details: "A drone entered Moldovan airspace near Sobari, Soroca District. The drone later crashed near Codrenii Noi, near the village of Scaieni, Dondușeni District. ",
+    link: "https://www.army.md/en/press-releases/inform-31",
+    country: "Codrenii Noi, Moldova 🇲🇩"
+  },
+
       {
     lat: 47.570278,
     lng: 28.663333,
@@ -1973,7 +2048,7 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     year: '2026',
     month: '10',
     popupType: 'Crash site', // shown in popup
-    date: '23 Oct 2026,13:59 - 14:12 ',
+    date: '23 Oct 2026, 13:59 - 14:12 ',
     details: "A Geran-4 type drone entered Moldovan airspace at 13:50 around Frunzeuca, Transnistria and disappeared from the radars at 14:10 around Pepeni, Sîngerei District. It reappeared at 14:12 near Meșeni, Rezina District. It later crashed in Chiștelnița, Telenești District near a house.",
     link: "https://www.army.md/en/press-releases/inform-32",
     country: "Chiștelnița, Moldova 🇲🇩"
