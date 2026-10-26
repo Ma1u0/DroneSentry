@@ -1964,6 +1964,21 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Chișinău Airport, Moldova 🇲🇩"
   },
 
+      {
+    lat: 47.570278,
+    lng: 28.663333,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '23 Oct 2026,13:59 - 14:12 ',
+    details: "A Geran-4 type drone entered Moldovan airspace at 13:50 around Frunzeuca, Transnistria and disappeared from the radars at 14:10 around Pepeni, Sîngerei District. It reappeared at 14:12 near Meșeni, Rezina District. It later crashed in Chiștelnița, Telenești District near a house.",
+    link: "https://www.army.md/en/press-releases/inform-32",
+    country: "Chiștelnița, Moldova 🇲🇩"
+  },
+
    
      /* =========================
         N E T H E R L A N D S
