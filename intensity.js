@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'United Kingdom': 'GBR', 'Gibraltar': 'GIB', 'Greece': 'GRC', 'Croatia': 'HRV',
     'Hungary': 'HUN', 'Ireland': 'IRL', 'Iceland': 'ISL', 'Italy': 'ITA',
     'Liechtenstein': 'LIE', 'Lithuania': 'LTU', 'Luxembourg': 'LUX', 'Latvia': 'LVA',
-    'Monaco': 'MCO', 'North Macedonia': 'MKD', 'Malta': 'MLT', 'Montenegro': 'MNE',
+    'Moldova': 'MDA', 'Monaco': 'MCO', 'North Macedonia': 'MKD', 'Malta': 'MLT', 'Montenegro': 'MNE',
     'Netherlands': 'NLD', 'Norway': 'NOR', 'Poland': 'POL', 'Portugal': 'PRT',
     'Romania': 'ROU', 'San Marino': 'SMR', 'Serbia': 'SRB', 'Slovakia': 'SVK',
     'Slovenia': 'SVN', 'Sweden': 'SWE', 'Türkiye': 'TUR', 'Vatican City': 'VAT',
