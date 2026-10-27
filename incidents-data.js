@@ -1964,6 +1964,21 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Chișinău Airport, Moldova 🇲🇩"
   },
 
+                     {
+    lat: 47.304167,
+    lng: 28.925278,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '30 Sep 2026, 20:45 - 21:07',
+    details: "A drone entered Moldovan airspace near Slobozia-Rașcov, Transnistria from Shershentsi Vinnytsia Oblast. The drone then continued flying towards Țipova, Rezina District before disappearing from the radars around Brănești, Orhei district. ",
+    link: "https://www.army.md/index.php/en/press-releases/inform-23",
+    country: "Brănești, Moldova 🇲🇩"
+  },
+
                   {
     lat: 46.455,
     lng: 29.985833,
