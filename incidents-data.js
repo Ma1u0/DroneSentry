@@ -1964,6 +1964,82 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Chișinău Airport, Moldova 🇲🇩"
   },
 
+                  {
+    lat: 46.455,
+    lng: 29.985833,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '03 Oct 2026, 07:53',
+    details: "Two drones and three rockets entered Moldovan airspace between 07:45 and 08:00 before crashing in Moldova. The explosion occured at 07:53 while the crash site was identified at 08:20. <br> No casualties were reported.",
+    link: "https://unimedia.info/ro/news/7c784254b8d568b4/cronologia-deflagratiilor-minut-cu-minut-cand-si-unde-exact-au-explodat-cele-5-drone-politia-a-securizat-zonele",
+    country: "Crocmaz, Moldova 🇲🇩"
+  },
+   
+         {
+    lat: 47.083333,
+    lng: 29.3,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '03 Oct 2026, 08:00',
+    details: "Two drones and three rockets entered Moldovan airspace between 07:45 and 08:00 before crashing in Moldova. One of the objects crashed between the villages of Delacău and Puhăceni at 08:00 and was identified at 08:30. <br> No casualties were reported.",
+    link: "https://unimedia.info/ro/news/7c784254b8d568b4/cronologia-deflagratiilor-minut-cu-minut-cand-si-unde-exact-au-explodat-cele-5-drone-politia-a-securizat-zonele",
+    country: "Delacău, Moldova 🇲🇩"
+  },
+
+            {
+    lat: 46.633333,
+    lng: 29.4,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '03 Oct 2026, 07:50',
+    details: "Two drones and three rockets entered Moldovan airspace between 07:45 and 08:00 before crashing in Moldova. The drone crashed at 07:50 and was the crash site was found at 08:15. <br> No casualties were reported.",
+    link: "https://unimedia.info/ro/news/7c784254b8d568b4/cronologia-deflagratiilor-minut-cu-minut-cand-si-unde-exact-au-explodat-cele-5-drone-politia-a-securizat-zonele",
+    country: "Căușeni, Moldova 🇲🇩"
+  },
+
+   
+            {
+    lat: 46.701111,
+    lng: 29.089167,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '03 Oct 2026, 08:24',
+    details: "Two drones and three rockets entered Moldovan airspace between 07:45 and 08:00 before crashing in Moldova. The explosion occured in the outskirts of Constantinovca at 08:24 and was located at 09:15. <br> No casualties were reported.",
+    link: "https://unimedia.info/ro/news/7c784254b8d568b4/cronologia-deflagratiilor-minut-cu-minut-cand-si-unde-exact-au-explodat-cele-5-drone-politia-a-securizat-zonele",
+    country: "Constantinovca, Moldova 🇲🇩"
+  },
+
+               {
+    lat: 46.749167,
+    lng: 28.606111,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '03 Oct 2026, 08:03',
+    details: "Two drones and three rockets entered Moldovan airspace between 07:45 and 08:00 before crashing in Moldova. One of the explosions occured in the outskirts of Dubovca at 08:03. The crash site was identified at 08:40. <br> No casualties were reported.",
+    link: "https://unimedia.info/ro/news/7c784254b8d568b4/cronologia-deflagratiilor-minut-cu-minut-cand-si-unde-exact-au-explodat-cele-5-drone-politia-a-securizat-zonele",
+    country: "Dubovca, Moldova 🇲🇩"
+  },
+
    {
   lat: 47.667778,
   lng: 29.211389,
