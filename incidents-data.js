@@ -1957,11 +1957,102 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     place: 'others',
     year: '2026',
     month: '09',
-    popupType: 'Airspace incursion', // shown in popup
+    popupType: 'Drone incursion', // shown in popup
     date: '08 Sep 2026',
     details: "A drone almost hit President Zelenskyy‘s plane departing from Chișinău to Oslo. <br> According to Norwegian Prime Minister Jonas Gahr Støre the incident almost ended in a tragedy",
     link: "https://www.reuters.com/world/europe/zelenskiys-plane-almost-hit-by-drone-tuesday-norway-pm-says-2026-09-09/",
     country: "Chișinău Airport, Moldova 🇲🇩"
+  },
+
+            {
+    lat: 47.883333,
+    lng: 28.35,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone incursion', // shown in popup
+    date: '24 Sep 2026, 06:58 - 07:11',
+    details: "At 06:58 another drone entered Moldovan airspace flying from Kodyma, Vinnytsia Oblast towards Socola, Șoldănești District. The drone disappeared from the radars at 07:11 near Cunicea, Camenca District.",
+    link: "https://www.army.md/index.php/en/press-releases/inform-19",
+    country: "Cunicea, Moldova 🇲🇩"
+  },
+
+   
+         {
+    lat: 47.883333,
+    lng: 28.35,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone incursion', // shown in popup
+    date: '24 Sep 2026, 06:35 - 06:45',
+    details: "At 06:35 another drone entered Moldovan airspac from Pridnistreanske, Vinnytsia Oblast flying towards Volovița, Soroca. Citizens reported the sighting after spotting the drone flying along the route Gura Căinarului–Lunga–Băhrinești–Gura Camencii in the Florești district.",
+    link: "https://www.army.md/index.php/en/press-releases/inform-19",
+    country: "Gura Camencii, Moldova 🇲🇩"
+  },
+
+         {
+    lat: 48.138333,
+    lng: 28.421389,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone incursion', // shown in popup
+    date: '24 Sep 2026, 05:21',
+    details: "A border police patrol spotted a drone entering Moldovan airspace at 05:21 from the direction of Velyke Koshnytsia, Vinnytsia Oblast before leaving it again.",
+    link: "https://www.army.md/index.php/en/press-releases/inform-19",
+    country: "Vasilcău, Moldova 🇲🇩"
+  },
+
+      {
+    lat: 48.372222,
+    lng: 26.843333,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone incursion', // shown in popup
+    date: '24 Sep 2026, 06:14 - 06:16',
+    details: "At 06:14 a drone entered Moldovan airspace from Chelymentsi Chernivtsi Oblast, flying towards Larga, Briceni district. The drone left flying back towards Chelymentsi, Chernivtsi Oblast",
+    link: "https://www.army.md/index.php/en/press-releases/inform-19",
+    country: "Larga, Moldova 🇲🇩"
+  },
+
+         {
+    lat: 46.85,
+    lng: 29.35,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Crash site', // shown in popup
+    date: '30 Sep 2026, 05:43',
+    details: "A drone entered Moldovan airspace and exploded at 05:43 outside of Hîrbovăț, Anenii Noi district.",
+    link: "https://www.army.md/en/press-releases/inform-22",
+    country: "Hîrbovăț, Moldova 🇲🇩"
+  },
+
+         {
+    lat: 47.248889,
+    lng: 29.173056,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '09',
+    popupType: 'Drone incursion', // shown in popup
+    date: '30 Sep 2026, 10:26 - 11:07',
+    details: "At 10:26 a drone entered Moldovan airspace in the area of Lunga, Dubăsari district, before heading north and disappearing from the radars at 11:07 near Arionești, Dondușeni district. The airspace in the Northern and Central zone was closed",
+    link: "https://www.army.md/en/press-releases/inform-22",
+    country: "Lunga, Moldova 🇲🇩"
   },
 
                      {
@@ -1972,7 +2063,7 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     place: 'others',
     year: '2026',
     month: '09',
-    popupType: 'Crash site', // shown in popup
+    popupType: 'Drone incursion', // shown in popup
     date: '30 Sep 2026, 20:45 - 21:07',
     details: "A drone entered Moldovan airspace near Slobozia-Rașcov, Transnistria from Shershentsi Vinnytsia Oblast. The drone then continued flying towards Țipova, Rezina District before disappearing from the radars around Brănești, Orhei district. ",
     link: "https://www.army.md/index.php/en/press-releases/inform-23",
@@ -2078,13 +2169,19 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
   risk: 'yellow',
   place: 'others',
   year: ['2026'],
-  month: ['10'],
+  month: ['09, 10'],
   country: "Pervomaisc, Moldova 🇲🇩",
 
   incidents: [
+         {
+      popupType: 'Airspace incursion', // shown in popup
+      date: '26 Sep 2026, 11:16 - 11:18 ',
+     details: "A drone entered Moldovan airspace at 11:16 from Stepanivka, Odesa Oblast in the area of Novocotovsc, Transnistria. It left at 11:18 near Pervomaisc, Transnistria towards Lymanske, Odesa Oblast.",
+      link: "https://www.army.md/en/press-releases/inform-20",
+    },
     {
       popupType: 'Airspace incursion', // shown in popup
-      date: '07 Sep 2026, 08:43 - 08:44 ',
+      date: '07 Oct 2026, 08:43 - 08:44 ',
      details: "A drone entered Moldovan airspace at 08:43 near Pervomaisc before leaving the airspace a minute later in the direction of Limanske, Odesa Oblast. ",
       link: "https://www.army.md/index.php/en/press-releases/inform-25",
     },
