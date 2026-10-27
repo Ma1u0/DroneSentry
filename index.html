@@ -83,11 +83,11 @@
 .stat-card h2 { font-size: 34px; margin: 0 0 6px; color: var(--red-deep); }
 .stat-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
 
-/* ===== Hover lists on the stat cards (countries / incidents this month) ===== */
+/* ===== Hover list for "Countries affected this month" ===== */
 .stat-card.has-tip { cursor: default; outline: none; }
 .stat-card.has-tip p { text-decoration: underline dotted var(--ink-faint, #9AA1AD); text-underline-offset: 3px; }
 .stat-card.has-tip:hover, .stat-card.has-tip:focus-visible { background: var(--surface-2, #F5F6F8); }
-.stat-tip {
+#countries-tip {
   position: fixed;
   z-index: 50;
   display: none;
@@ -101,11 +101,11 @@
   text-align: left;
   pointer-events: none;
 }
-.stat-tip.show { display: block; }
-.stat-tip .tip-title { font-size: 13px; font-weight: 600; color: var(--ink); margin: 0 0 2px; }
-.stat-tip .tip-sub { font-size: 11.5px; color: var(--ink-soft); margin: 0 0 8px; }
-.stat-tip .tip-list { max-height: 300px; overflow: hidden; }
-.stat-tip .tip-row {
+#countries-tip.show { display: block; }
+#countries-tip .tip-title { font-size: 13px; font-weight: 600; color: var(--ink); margin: 0 0 2px; }
+#countries-tip .tip-sub { font-size: 11.5px; color: var(--ink-soft); margin: 0 0 8px; }
+#countries-tip .tip-list { max-height: 300px; overflow: hidden; }
+#countries-tip .tip-row {
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: baseline;
@@ -115,9 +115,8 @@
   font-size: 13.5px;
   color: var(--ink);
 }
-.stat-tip .tip-count { font-family: var(--font-mono); font-size: 12px; color: var(--red-deep); min-width: 2.2em; text-align: right; }
-.stat-tip .tip-more { font-size: 12px; color: var(--ink-soft); padding: 6px 0 0; border-top: 1px solid var(--line-soft, #EDEFF2); }
-.stat-tip .tip-ago { font-size: 12px; color: var(--ink-soft); min-width: 5.6em; text-align: right; }
+#countries-tip .tip-count { font-family: var(--font-mono); font-size: 12px; color: var(--red-deep); min-width: 2.2em; text-align: right; }
+#countries-tip .tip-ago { font-size: 12px; color: var(--ink-soft); min-width: 5.6em; text-align: right; }
 
 /* ===== Chart ===== */
 .charts-section { margin-bottom: 70px; }
@@ -199,7 +198,7 @@
       <h2 id="stat-week-count">–</h2>
       <p>Incidents this week</p>
     </div>
-    <div class="stat-card has-tip" id="incidents-card" tabindex="0" aria-describedby="incidents-tip">
+    <div class="stat-card">
       <h2 id="stat-month-count">–</h2>
       <p>Incidents this month</p>
     </div>
@@ -214,8 +213,7 @@
   </div>
 </div>
 
-<div id="countries-tip" class="stat-tip" role="tooltip"></div>
-<div id="incidents-tip" class="stat-tip" role="tooltip"></div>
+<div id="countries-tip" role="tooltip"></div>
 
 <div class="section charts-section">
   <h2>Incidents Over Time</h2>
@@ -328,37 +326,49 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('stat-month-countries').textContent = new Set(monthIncidents.map(i => extractCountryName(i.countryRaw))).size;
   document.getElementById('this-month-heading').textContent = `${MONTH_NAMES[curMonth]} ${curYear}`;
 
-  // ---- Hover lists on the stat cards ----
-  // Both are built live from monthIncidents, so they update themselves
-  // whenever incidents-data.js changes.
-  function agoText(ms) {
-    const days = Math.max(0, Math.round((todayUTC - ms) / 86400000));
-    if (days === 0) return 'today';
-    if (days === 1) return 'yesterday';
-    return `${days} days ago`;
-  }
-
-  // Wires a card to a tooltip. The stats strip clips overflow, so tooltips
-  // live outside it and are positioned against the card with fixed coordinates.
-  function attachTip(cardId, tipId, title, subtitle, emptyText, rows, moreCount) {
-    const card = document.getElementById(cardId);
-    const tip = document.getElementById(tipId);
+  // ---- Hover list: which countries are affected this month ----
+  // Sorted by number of incidents (most first); ties go to whichever country
+  // had its latest incident most recently. Built live from monthIncidents,
+  // so it updates itself whenever incidents-data.js changes.
+  (function setupCountriesTip() {
+    const card = document.getElementById('countries-card');
+    const tip = document.getElementById('countries-tip');
     if (!card || !tip) return;
 
-    tip.innerHTML = '';
-    const titleEl = document.createElement('p');
-    titleEl.className = 'tip-title';
-    titleEl.textContent = title;
-    tip.appendChild(titleEl);
+    const byCountry = {};
+    monthIncidents.forEach(i => {
+      const name = extractCountryName(i.countryRaw);
+      const c = byCountry[name] || (byCountry[name] = { name, flag: '', count: 0, latest: 0 });
+      c.count += 1;
+      c.latest = Math.max(c.latest, i.date.getTime());
+      if (!c.flag) c.flag = extractFlag(i.countryRaw);
+    });
+    const rows = Object.values(byCountry).sort((a, b) =>
+      b.count - a.count || b.latest - a.latest || a.name.localeCompare(b.name));
 
-    const sub = document.createElement('p');
-    sub.className = 'tip-sub';
+    function agoText(ms) {
+      const days = Math.max(0, Math.round((todayUTC - ms) / 86400000));
+      if (days === 0) return 'today';
+      if (days === 1) return 'yesterday';
+      return `${days} days ago`;
+    }
+
+    tip.innerHTML = '';
+    const title = document.createElement('p');
+    title.className = 'tip-title';
+    title.textContent = `Affected in ${MONTH_NAMES[curMonth]} ${curYear}`;
+    tip.appendChild(title);
+
     if (rows.length === 0) {
-      sub.style.margin = '0 0 4px';
-      sub.textContent = emptyText;
-      tip.appendChild(sub);
+      const empty = document.createElement('p');
+      empty.className = 'tip-sub';
+      empty.style.margin = '0 0 4px';
+      empty.textContent = 'No incidents so far this month.';
+      tip.appendChild(empty);
     } else {
-      sub.textContent = subtitle;
+      const sub = document.createElement('p');
+      sub.className = 'tip-sub';
+      sub.textContent = 'Most incidents first, then most recent.';
       tip.appendChild(sub);
       const list = document.createElement('div');
       list.className = 'tip-list';
@@ -366,25 +376,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const row = document.createElement('div');
         row.className = 'tip-row';
         const name = document.createElement('span');
-        name.textContent = r.name;
-        const mid = document.createElement('span');
-        mid.className = 'tip-count';
-        mid.textContent = r.mid;
+        name.textContent = `${r.flag} ${r.name}`.trim();
+        const count = document.createElement('span');
+        count.className = 'tip-count';
+        count.textContent = r.count;
         const ago = document.createElement('span');
         ago.className = 'tip-ago';
-        ago.textContent = r.ago;
-        row.append(name, mid, ago);
+        ago.textContent = agoText(r.latest);
+        row.append(name, count, ago);
         list.appendChild(row);
       });
       tip.appendChild(list);
-      if (moreCount > 0) {
-        const more = document.createElement('div');
-        more.className = 'tip-more';
-        more.textContent = `+ ${moreCount} more - see the Calendar for all of them`;
-        tip.appendChild(more);
-      }
     }
 
+    // The stats strip clips overflow, so the tooltip lives outside it and is
+    // positioned against the card with fixed coordinates.
     function place() {
       const r = card.getBoundingClientRect();
       const w = tip.offsetWidth;
@@ -395,11 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tip.style.left = `${left}px`;
       tip.style.top = `${top}px`;
     }
-    function show() {
-      document.querySelectorAll('.stat-tip.show').forEach(t => t.classList.remove('show'));
-      tip.classList.add('show');
-      place();
-    }
+    function show() { tip.classList.add('show'); place(); }
     function hide() { tip.classList.remove('show'); }
 
     card.addEventListener('mouseenter', show);
@@ -410,39 +412,6 @@ document.addEventListener('DOMContentLoaded', () => {
     card.addEventListener('click', () => tip.classList.contains('show') ? hide() : show());
     window.addEventListener('scroll', hide, { passive: true });
     window.addEventListener('resize', hide);
-  }
-
-  // Countries: most incidents first, ties go to whoever was hit most recently.
-  (function () {
-    const byCountry = {};
-    monthIncidents.forEach(i => {
-      const name = extractCountryName(i.countryRaw);
-      const c = byCountry[name] || (byCountry[name] = { name, flag: '', count: 0, latest: 0 });
-      c.count += 1;
-      c.latest = Math.max(c.latest, i.date.getTime());
-      if (!c.flag) c.flag = extractFlag(i.countryRaw);
-    });
-    const rows = Object.values(byCountry)
-      .sort((a, b) => b.count - a.count || b.latest - a.latest || a.name.localeCompare(b.name))
-      .map(c => ({ name: `${c.flag} ${c.name}`.trim(), mid: c.count, ago: agoText(c.latest) }));
-    attachTip('countries-card', 'countries-tip',
-      `Affected in ${MONTH_NAMES[curMonth]} ${curYear}`,
-      'Most incidents first, then most recent.',
-      'No incidents so far this month.', rows, 0);
-  })();
-
-  // Incidents: newest first, capped so the popover stays a quick glance.
-  (function () {
-    const MAX_ROWS = 10;
-    const rows = monthIncidents.slice(0, MAX_ROWS).map(i => ({
-      name: `${extractFlag(i.countryRaw)} ${i.countryRaw.split(',')[0].trim()}`.trim(),
-      mid: `${MONTH_SHORT[i.date.getUTCMonth()]} ${String(i.date.getUTCDate()).padStart(2, '0')}`,
-      ago: agoText(i.date.getTime())
-    }));
-    attachTip('incidents-card', 'incidents-tip',
-      `Incidents in ${MONTH_NAMES[curMonth]} ${curYear}`,
-      'Most recent first.',
-      'No incidents so far this month.', rows, Math.max(0, monthIncidents.length - MAX_ROWS));
   })();
 
   function mostAffectedFlags(list, emptyFlag) {
