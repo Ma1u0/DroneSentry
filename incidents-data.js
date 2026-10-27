@@ -1964,6 +1964,63 @@ country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Chișinău Airport, Moldova 🇲🇩"
   },
 
+   {
+  lat: 47.667778,
+  lng: 29.211389,
+  type: 'drone',        // used for filtering
+  risk: 'yellow',
+  place: 'others',
+  year: ['2026'],
+  month: ['10'],
+  country: "Pervomaisc, Moldova 🇲🇩",
+
+  incidents: [
+    {
+      popupType: 'Airspace incursion', // shown in popup
+      date: '07 Sep 2026, 08:43 - 08:44 ',
+     details: "A drone entered Moldovan airspace at 08:43 near Pervomaisc before leaving the airspace a minute later in the direction of Limanske, Odesa Oblast. ",
+      link: "https://www.army.md/index.php/en/press-releases/inform-25",
+    },
+    {
+      popupType: 'Airspace Incursion', // shown in popup
+    date: '07 Oct 2026, 20:04 - 20:05',
+    details: "A drone entered Moldovan airspace at 20:04 near Pervomaisc before leaving the airspace a minute later in the direction of Limanske, Odesa Oblast. ",
+    link: "https://www.army.md/index.php/en/press-releases/inform-26",
+    },
+  ]
+},
+
+                  {
+    lat: 46.8207151,
+    lng: 29.1390186,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '10 Oct 2026',
+    details: "A drone entered Moldovan airspace at night and was followed by an explosion outside of the towns of Geamăna and Văratic",
+    link: "https://www.army.md/en/press-releases/inform-28",
+    country: "Geamăna, Moldova 🇲🇩"
+  },
+
+               {
+    lat: 46.538889,
+    lng: 29.856667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Airspace incursion', // shown in popup
+    date: '15 Oct 2026, 01:43 - 01:51',
+    details: "A drone entered Moldovan airspace at 01:43 from Hradynivka, Odesa Oblast. At 01:51 it left the airspace again in the direction of Starokazachye, Odesa Oblast.",
+    link: "https://www.army.md/en/press-releases/inform-29",
+    country: "Purcari, Moldova 🇲🇩"
+  },
+
+
             {
     lat: 47.8775949,
     lng: 29.1736613,
