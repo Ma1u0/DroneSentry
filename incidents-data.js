@@ -511,6 +511,21 @@ details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under 
 link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
 country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
+
+        {
+lat:   43.285,
+lng:   28.873,
+type: 'drone',        // used for filtering
+risk: 'orange',
+place: 'others',
+year: '2026',
+month: 10,
+popupType: 'Crash site', // shown in popup
+ date: '28 Oct 2026, shortly before 13:00',
+details: "Shortly before 13:00, three maritime drones struck the Liberian-flagged CONTSHIP JET, a container ship, on its way from Haifa, Israel to Constanța, Romania. The crew was evacuated ",
+link: "https://apnews.com/article/bulgaria-drone-attack-container-ship-black-sea-357e91838a3695acb39d3e361bc2fe72",
+country: "CONTSHIP JET, Bulgarian EEZ, Bulgaria 🇧🇬",
+    },
   
  
    /* =========================
