@@ -2161,21 +2161,31 @@ country: "CONTSHIP JET, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Dubovca, Moldova 🇲🇩"
   },
 
-   
-               {
+   {
     lat: 46.409444,
     lng: 30.093056,
-    type: 'drone',      // used for filtering
-    risk: 'yellow',
-    place: 'others',
-    year: '2026',
-    month: '10',
-    popupType: 'Crash site', // shown in popup
+   type: 'drone',      // used for filtering
+   risk: 'yellow',
+   place: 'others',
+  year: ['2026'],
+  month: ['09, 10'],
+country: "Palanca, Moldova 🇲🇩",
+
+  incidents: [
+         {
+      popupType: 'Drone incursion', // shown in popup
+      date: '21 Sep 2026, 12:34 - 12:36 ',
+     details: "At 12:34 a drone entered Moldovan airspace from Maiaki, Odesa Oblast, and left again at 12:36 in the direction of Biliaivka, Odesa Oblast.",
+      link: "https://www.army.md/en/press-releases/inform-18",
+    },
+    {
+       popupType: 'Drone incursion', // shown in popup
     date: '03 Oct 2026, 08:04 - 08:05',
     details: "An object entered Moldovan airspace at 08:04 from Udobnoe, Odesa Oblast, and left a minute later in the direction of Bilyaivka, Odesa Oblast.",
     link: "https://www.army.md/index.php/en/press-releases/clarification",
-    country: "Palanca, Moldova 🇲🇩"
-  },
+    },
+  ]
+},
 
    {
   lat: 47.667778,
