@@ -1599,14 +1599,14 @@ country: "CONTSHIP JET, Bulgarian EEZ, Bulgaria 🇧🇬",
 
       {
     lat: 49.207947,
-    lng: 2.195508,
+    lng: -2.195508,
     type: 'drone',      // used for filtering
     risk: 'yellow',
     place: 'airports',
     year: '2026',
      month: '10',
     popupType: 'Drone sighting / airport closure', // shown in popup
-    date: '30 Oct 2025, 20:20 - 22:30',
+    date: '30 Oct 2026, 20:20 - 22:30',
     details: "Three flights had to be cancelled following multiple drone sightings in the vincinity of Jersey Airport. So far, police has not been able to identify the drone operator. ",
     link: "https://www.facebook.com/JerseyPolice/posts/press-release-police-appeal-for-witnesses-following-drone-reports-near-jersey-ai/1546641590827221/",
     country: "Jersey Airport, Jersey 🇯🇪"
