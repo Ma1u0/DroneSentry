@@ -1690,6 +1690,21 @@ country: "CONTSHIP JET, Bulgarian EEZ, Bulgaria 🇧🇬",
     link: "https://www.reuters.com/business/aerospace-defense/latvia-shoots-down-drone-its-airspace-finland-restricts-parts-baltic-sea-2026-08-14/",
     country: "Rugāji, Latvia 🇱🇻"
   },
+
+     {
+    lat: 57.13,
+    lng: 27.263889,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Drone incursion / crash site', // shown in popup
+    date: '03 Nov 2026, around 00:13 - 00:35',
+    details: "At around 00:13 Latvian Armed Forces reported an threat to Latvian airspace in the Balvi and Ludza districts. Interceptor drones and NATO jets were scrambled. <br> The object reportedly crashed in the Balvi district causing the threat to the airspace being lifted at 00:35 local time.",
+    link: "https://www.mil.lv/lv/zinas/izsludinats-gaisa-telpas-apdraudejums-balvu-un-ludzas-novados",
+    country: "Balvi district, Latvia 🇱🇻"
+  },
     
      /* =========================
        L I T H U A N I A
