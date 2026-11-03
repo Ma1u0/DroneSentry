@@ -2359,6 +2359,51 @@ country: "Palanca, Moldova 🇲🇩",
     country: "Chiștelnița, Moldova 🇲🇩"
   },
 
+         {
+    lat: 47.570278,
+    lng: 28.663333,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Crash site', // shown in popup
+    date: '23 Oct 2026, 13:59 - 14:12 ',
+    details: "A Geran-4 type drone entered Moldovan airspace at 13:50 around Frunzeuca, Transnistria and disappeared from the radars at 14:10 around Pepeni, Sîngerei District. It reappeared at 14:12 near Meșeni, Rezina District. It later crashed in Chiștelnița, Telenești District near a house.",
+    link: "https://www.army.md/en/press-releases/inform-32",
+    country: "Chiștelnița, Moldova 🇲🇩"
+  },
+
+            {
+    lat: 47.373056,
+    lng: 28.371667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Drone incursion', // shown in popup
+    date: '31 Oct 2026, 16:24 - 16:54 ',
+    details: "A drone has entered Moldovan airspace at 16:24 near Plopi, Transnistria before continuing further towards Țibirica, Călărași District, where it disappeared from the radars. It was later confirmed that it left Moldovan airspace. <br> It is possible that it is the same drone as the drones in the two incidents in Northeastern Romania later this evening.",
+    link: "https://www.army.md/index.php/en/press-releases/inform-34",
+    country: "Țibirica, Moldova 🇲🇩"
+  },
+   
+               {
+    lat: 48.094722,
+    lng: 27.044722,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '10',
+    popupType: 'Drone incursion', // shown in popup
+    date: '31 Oct 2026, 17:50 - 18:12 ',
+    details: "A drone entered Moldovan airspace near Sobor, Soroca district and continued its way towards Viișoara, Edineț district, where it left Moldovan airspace. <br> It is possible that it is the same drone as the drones in the two incidents in Northeastern Romania later this evening.",
+    link: "https://www.army.md/index.php/en/press-releases/inform-34",
+    country: "Viișoara, Moldova 🇲🇩"
+  },
+
    
      /* =========================
         N E T H E R L A N D S
@@ -3931,6 +3976,36 @@ place: 'others',
     details: "A drone has hit the Comoros-flagged vessel 'KHORYV' which sailed from Eregli, 🇹🇷 to Sulina, 🇷🇴. The incident happened 13 nautical miles off Constanța, right outside of Romanian territorial waters. <br> One of the sailors is dead while three are missing. <br><br> Romanian President Dan blames Russia for this incident and calls it a 'part ‌of ⁠Russia's escalation process in its war in Ukraine' ",
     link: "https://www.reuters.com/world/romania-blames-russia-drone-that-sinks-cargo-ship-1-killed-3-missing-2026-10-23/",
     country: "KHORYV, Romanian EEZ, Romania 🇷🇴"
+   },
+
+      {
+    lat: 47.8333,
+    lng: 26.8167,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Drone incursion', // shown in popup
+    date: '31 Oct 2026, evening',
+    details:  "Two drones entered Romanian airspace. One of those left shortly afterwards. Four F-16 fighterjets have been scrambled.",
+    link: "https://x.com/MApNRomania/status/2116598630811332944?a=1_B6IaCQQVFYpLafAPg&s=20",
+    country: "Northeastern Romania, Romania 🇷🇴"
+   },
+
+         {
+    lat: 46.42,
+    lng: 26.78,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Drone incursion', // shown in popup
+    date: '31 Oct 2026, evening',
+    details:  "Two drones entered Romanian airspace. One of those drones was last seen on the radars between Bacău and Vaslui county. So far no drone crashes have been reported",
+    link: "https://x.com/MApNRomania/status/2116598630811332944?a=1_B6IaCQQVFYpLafAPg&s=20",
+    country: "Bacău County, Romania 🇷🇴"
    },
    
  /* =========================
