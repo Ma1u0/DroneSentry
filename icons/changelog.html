@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DroneSentry - Changelog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" href="icons/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.container { transition: margin-left 0.25s ease; }
+
+/* =========================
+   TIMELINE RAIL
+========================= */
+.release-list {
+  position: relative;
+  padding-left: 28px;
+}
+
+.release-list::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--line);
+}
+
+/* =========================
+   RELEASE BLOCKS
+========================= */
+.release {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.release:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--line-soft);
+  transform: translateY(-1px);
+}
+
+.release::before {
+  content: '';
+  position: absolute;
+  left: -28.5px;
+  top: 24px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 0 3px var(--bg);
+}
+
+.release-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.release-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.release-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.release-date {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+/* =========================
+   CHANGE LIST
+========================= */
+.release ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.release li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+/* =========================
+   TAGS
+========================= */
+.tag {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 10.5px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: white;
+  flex-shrink: 0;
+}
+
+.tag.ui { background: var(--red); }
+.tag.data { background: var(--amber); }
+.tag.mobile { background: #3B6EA5; }
+.tag.meta { background: #3F8F63; }
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+  .release-list { padding-left: 22px; }
+  .release-list::before { left: 4px; }
+  .release::before { left: -22.5px; }
+  .release { padding: 16px 18px; }
+  .release-title { font-size: 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <div id="sidebar-content">
+    <div class="sidebar-mark">DroneSentry</div>
+    <div class="sidebar-tag">INCIDENT TRACKER</div>
+    <nav>
+      <a href="index.html"><span class="nav-icon">⌂</span> Home</a>
+      <a href="map.html"><span class="nav-icon">◈</span> Map</a>
+      <a href="intensity.html"><span class="nav-icon">▦</span> Intensity</a>
+      <a href="calendar.html"><span class="nav-icon">▤</span> Calendar</a>
+      <a href="changelog.html" class="current"><span class="nav-icon">◷</span> Changelog</a>
+      <a href="info.html"><span class="nav-icon">ⓘ</span> Info</a>
+    </nav>
+    <a class="sidebar-social" href="https://x.com/drone_sentry" target="_blank" rel="noopener noreferrer" aria-label="DroneSentry on X">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+  </div>
+</div>
+<div id="sidebar-handle">&#9776;</div>
+
+<!-- Page Content -->
+<div class="container page">
+  <div class="page-eyebrow">RELEASE HISTORY</div>
+  <h1>Changelog</h1>
+  <p class="lede">Updates and new incidents.</p>
+
+  <div class="release-list">
+
+  <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag ui">UI</span>
+      </div>
+      <div class="release-date">16 Nov 2026</div>
+    </div>
+    <div class="release-title">New "Vessel" category: drone attacks on ships are now shown separately from drone incidents (new filter, legend entry, icon and calendar symbol)</div>
+  </div>
+
+                                                    <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">31 Oct 2026</div>
+    </div>
+    <div class="release-title"> Incident at Jersey Airport, Jersey (30 Oct 2026) added </div>
+  </div>
+
+                                               <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">28 Oct 2026</div>
+    </div>
+    <div class="release-title"> Incident at the CONTSHIP JET, Bulgaria (28 Oct 2026) added </div>
+  </div>
+
+                                          <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">25 Oct 2026</div>
+    </div>
+    <div class="release-title"> Incidents at the Port of Eemshaven, Netherlands (03, 10, 11, 13, and 17/18 Oct 2026) added <br> Three incidents in East Groningen (Zuidbroek, Zonnepark Eekerpolder, Meeden), Netherlands (20 Oct 2026) added <br> Incidents in Zealand (Domburg, Vlissingen, Borssele, Terneuzen), Netherlands (12 Nov 2025) added <br> Incident at the MAERSK MONTANA, Netherlands (09 Nov 2025) added</div>
+  </div>
+
+                                          <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">23 Oct 2026</div>
+    </div>
+    <div class="release-title"> Incident in Mosesti, Romania (21 Oct 2026) added <br> Incident at the KHORYV, Romania (23 Oct 2026) added </div>
+  </div>
+
+                                     <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">17 Oct 2026</div>
+    </div>
+    <div class="release-title"> Incident in Tulcea County, Romania (14 Oct 2026) added <br> Three incidents in the Sulina–Chilia area, Romania (14 and 15 Oct 2026) added <br> Incident in Romanian territorial waters, Romania (17 Oct 2026) added</div>
+  </div>
+
+                                     <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">13 Oct 2026</div>
+    </div>
+    <div class="release-title"> Both incidents in Bulgarian EEZ, Bulgaria (13 Oct 2026) added </div>
+  </div>
+
+                                <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">06 Oct 2026</div>
+    </div>
+    <div class="release-title"> Incident in Bulgarian EEZ, Bulgaria (06 Oct 2026) added <br> Incident in Romanian EEZ, Romania (05 Oct 2026) added <br> Incident in Plauru, Romania (02 Oct 2026) <br> Incident in Insula Mare a Brăilei, Romania (29 Sep 2026) added </div>
+  </div>
+
+                           <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">28 Sep 2026</div>
+    </div>
+    <div class="release-title"> Incidents in Somova, Switzerland (27 Sep 2026) and Padina (26 Sep 2026) added</div>
+  </div>
+
+                      <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">25 Sep 2026</div>
+    </div>
+    <div class="release-title">Incidents in Creil, France (26, 28, 30 Nov 2025) added <br> Incidents in Taranto, Italy (19, 20 Sep 2025) added <br> Incident at Meiringen air base, Switzerland (2025 - 2026) <br> Incident in Jassbach, Switzerland (Feb 2026)  added</div>
+  </div>
+
+      <div class="release">
+         <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">24 Sep 2026</div>
+    </div>
+    <div class="release-title">Incident at the Black Sea, Romania (20 Sep 2026) added <br> Incident at Vilnius airprot, Lithuania (21 Sep 2026) added <br> Incident in Nowa Pasłęka, Poland (23 Sep 2026) <br> Incident at Berlin-Brandenburg Airport, Germany (23 Sep 2026) added <br> Incident in Solca, Romania (24 Sep 2026) added <br> Incident in Wunstorf, Germany (14 Sep 2026) updated </div>
+  </div>
+
+                 <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">19 Sep 2026</div>
+    </div>
+    <div class="release-title">Incident in Wunstorf, Germany (14 Sep 2026) updated <br> Incidens in Medenach, Luxembourg (15 & 16 Sep 2026) added <br> Incident at Luxembourg airport, Luxembourg (18 Sep 2026) added </div>
+  </div>
+
+            <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">17 Sep 2026</div>
+    </div>
+    <div class="release-title">Incident in Rusinowo, Poland (14 Sep 2026) updated</div>
+  </div>
+
+       <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">15 Sep 2026</div>
+    </div>
+    <div class="release-title">Incident in Pratkūnai, Lithuania (15 Sep 2026) updated</div>
+  </div>
+     
+       <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">15 Sep 2026</div>
+    </div>
+    <div class="release-title">Incident in Wunstdorf, Germany (14 Sep 2026) added</div>
+  </div>
+
+  <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag meta">Data</span>
+      </div>
+      <div class="release-date">15 Sep 2026</div>
+    </div>
+    <div class="release-title">Incident in Pratkūnai, Lithuania (15 Sep 2026) added</div>
+  </div>
+
+  <div class="release">
+    <div class="release-header">
+      <div class="release-header-left">
+        <span class="tag data">Meta</span>
+      </div>
+      <div class="release-date">14 Sep 2026</div>
+    </div>
+    <div class="release-title">Website overhaul</div>
+  </div>
+
+  </div>
+</div>
+
+<!-- Sidebar Logic (overlay, no content movement) -->
+<script>
+const sidebar = document.getElementById('sidebar');
+const handle = document.getElementById('sidebar-handle');
+
+handle.addEventListener('click', () => {
+  const open = sidebar.classList.toggle('sidebar-open');
+  handle.style.transform = open ? 'translateX(240px)' : 'translateX(0)';
+  handle.innerHTML = open ? '&times;' : '&#9776;';
+});
+</script>
+
+</body>
+</html>
