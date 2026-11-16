@@ -526,6 +526,21 @@ details: "Shortly before 13:00, three maritime drones struck the Liberian-flagge
 link: "https://apnews.com/article/bulgaria-drone-attack-container-ship-black-sea-357e91838a3695acb39d3e361bc2fe72",
 country: "CONTSHIP JET, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
+
+           {
+lat:  42.889048,
+lng:  29.108469,
+type: 'drone',        // used for filtering
+risk: 'orange',
+place: 'others',
+year: '2026',
+month: 10,
+popupType: 'Crash site', // shown in popup
+ date: '16 Nov 2026, 09:15',
+details: "The Somali-flagged vessel was carrying 3000 metric tons of wheat and was sailing from Tulcea, Romania to Egypt. The crew abandoned the ship after being struck by a drone.",
+link: "https://www.reuters.com/world/cargo-ship-sinking-black-sea-off-bulgaria-says-transport-ministry-2026-11-16/",
+country: "BETUL8, Bulgarian EEZ, Bulgaria 🇧🇬",
+    },
   
  
    /* =========================
@@ -4295,5 +4310,24 @@ place: 'others',
     country: "Trabzon, Türkiye 🇹🇷",
   },
 
+   /* =========================
+       U N I T E D  K I N G D O M
+    ========================= */
+
+     {
+    lat: 52.408333,
+    lng: 0.556667,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'militarybases',
+    year: '2026',
+     month: '11',
+    popupType: 'Drone sighting', // shown in popup
+    date: ' 13 Nov 2026, evening',
+    details: "Residents of a nearby village reported sirens sounding which turned out to be most likely due to a drone sighting. <br> No personnel, aircraft, or infrastructure was affected.  ",
+    link: "https://www.bbc.com/news/articles/c6jd75geegzyo",
+    country: "RAF Lakenheath, United Kingdom 🇬🇧",
+  },
+   
 ];
 
