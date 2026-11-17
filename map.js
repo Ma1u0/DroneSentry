@@ -47,6 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
     borderYellow: L.icon({ iconUrl: 'icons/yellow_soldier.png', iconSize: [28,28] }),
     borderGreen: L.icon({ iconUrl: 'icons/green_soldier.png', iconSize: [28,28] }),
     borderBlue: L.icon({ iconUrl: 'icons/blue_soldier.png', iconSize: [28,28] }),
+
+    vesselBrown: L.icon({ iconUrl: 'icons/brown_vessel.png', iconSize: [28,28] }),
+    vesselRed: L.icon({ iconUrl: 'icons/red_vessel.png', iconSize: [28,28] }),
+    vesselOrange: L.icon({ iconUrl: 'icons/orange_vessel.png', iconSize: [28,28] }),
+    vesselYellow: L.icon({ iconUrl: 'icons/yellow_vessel.png', iconSize: [28,28] }),
+    vesselGreen: L.icon({ iconUrl: 'icons/green_vessel.png', iconSize: [28,28] }),
+    vesselBlue: L.icon({ iconUrl: 'icons/blue_vessel.png', iconSize: [28,28] }),
   };
 
   // ------------------------
