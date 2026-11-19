@@ -478,7 +478,7 @@ popupType: 'Vessel attack', // shown in popup
 date: ' 06 Oct 2026, around 03:00',
 details: "Two Turkish-owned vessels were attacked within Bulgarian exclusive econimic waters, around 70 nautical miles East of Byala. One vessel was the Togo-flagged ALFA WATAN travelling from Turkey to Sulina, Romania. The vessel sank following the damage and so far no survivors have been found. The second vessel was the Palau-flagged ABLE which caught fire following the attack. All 18 sailors have survived but two of them had to hospitalised. The cargo of the ships is unknown. <br><br> Bulgaria will invoke neither NATO Article IV nor V  ",
 link: "https://www.euronews.com/2026/10/06/drones-hit-two-ships-off-coast-of-bulgaria-as-government-calls-emergency-meeting",
-country: "ALFA WATAN / ABLE Bulgarian EEZ, Bulgaria 🇧🇬",
+country: "ALFA WATAN 🇹🇷 / ABLE 🇹🇷, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
 
      {
@@ -493,7 +493,7 @@ popupType: 'Vessel attack', // shown in popup
  date: '13 Oct 2026, ~01:30',
 details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> CHELSEA 3 was sailing from Giresun, Turkey to Giurgiuleşti, Moldova until it was ultimately hit by three drones around 33 kilometers from the Bulgarian coast. <br> The crew was rescued and only 5 members suffered minor injuries. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
 link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
-country: "CHELSEA 3, Bulgarian EEZ, Bulgaria 🇧🇬",
+country: "CHELSEA 3 🇲🇹, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
 
    
@@ -509,7 +509,7 @@ popupType: 'Vessel attack', // shown in popup
  date: '13 Oct 2026, ~01:30',
 details: "Around 01:30 the Ukrainian-owned vessel CHELSEA 3, which sailed under Maltese flag, and the Turkish owned AZOV CONCORD, which wass sailing under the flag of St. Vincent and the Grenadines, were struck by drones. <br><br> AZOV CONCORD was sailing from Brăila, Romania to Izmir, Turkey. One of the crew members was rescued, the rest is missing. <br><br> PM Radev said that it is unknown who was responsible for the incidents but that it benefits Russia the most. <br> The Russian ambassador to Bulgaria was summoned following these (Bulgarian EEZ near Krapez and Bjala) incidents ",
 link: "https://www.reuters.com/world/europe/drone-sinks-ship-off-bulgaria-coast-prime-minister-says-2026-10-13/",
-country: "AZOV CONCORD, Bulgarian EEZ, Bulgaria 🇧🇬",
+country: "AZOV CONCORD 🇹🇷, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
 
         {
@@ -524,7 +524,7 @@ popupType: 'Vessel attack', // shown in popup
  date: '28 Oct 2026, shortly before 13:00',
 details: "Shortly before 13:00, three maritime drones struck the Liberian-flagged CONTSHIP JET, a container ship, on its way from Haifa, Israel to Constanța, Romania. The crew was evacuated ",
 link: "https://apnews.com/article/bulgaria-drone-attack-container-ship-black-sea-357e91838a3695acb39d3e361bc2fe72",
-country: "CONTSHIP JET, Bulgarian EEZ, Bulgaria 🇧🇬",
+country: "CONTSHIP JET 🇱🇷, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
 
            {
@@ -539,7 +539,7 @@ popupType: 'Vessel attack', // shown in popup
  date: '16 Nov 2026, 09:15',
 details: "The Somali-flagged vessel was carrying 3000 metric tons of wheat and was sailing from Tulcea, Romania to Egypt. The crew abandoned the ship after being struck by a drone.",
 link: "https://www.reuters.com/world/cargo-ship-sinking-black-sea-off-bulgaria-says-transport-ministry-2026-11-16/",
-country: "BETUL8, Bulgarian EEZ, Bulgaria 🇧🇬",
+country: "BETUL8 🇸🇴, Bulgarian EEZ, Bulgaria 🇧🇬",
     },
   
  
@@ -3960,7 +3960,22 @@ place: 'others',
     date: '05 Oct 2026, around 11:00',
     details: "Royad Mammadov, a Turkish-owned vessels travelling from Ismail, Ukraine to Ravenna, Italy was hit by a drone causing a fire, The Santi Kitts and Nevis-flagged ship was carrying grain and was hit by aerial and sea drones. Two crew members were killed, three were wounded, and one is still missing.",
     link: "https://www.euronews.com/2026/10/05/drone-reportedly-hits-ship-in-black-sea-killing-two-and-injuring-11",
-    country: "Royad Mammadov, Romanian EEZ, Romania 🇷🇴"
+    country: "ROYAD MAMMADOV 🇹🇷, Romanian EEZ, Romania 🇷🇴"
+   },
+
+         {
+    lat: 45.16,
+    lng: 29.96,
+    type: 'drone',      // used for filtering
+    risk: 'orange',
+    place: 'others',
+    year: '2026',
+     month: '10',
+    popupType: 'Vessel attack', // shown in popup
+    date: '15 Oct 2026, 04:00',
+    details: "A drone hit the San Marino-flagged chemical tanker 'WINE TRADER' and set it on fire. According to authorities the cargo was empty at the time. According to NATO sources, the drones found inside of the tanker were of Russian origin. <br> Seven of the sailors went missing.",
+    link: "https://www.theguardian.com/world/2026/oct/15/sailors-missing-drone-strike-tankers-romania-black-sea-coast",
+    country: "WINE TRADER 🇸🇲, Romanian territorial waters, Romania 🇷🇴"
    },
 
       {
@@ -4005,7 +4020,7 @@ place: 'others',
     date: '23 Oct 2026, around 10:00',
     details: "A drone has hit the Comoros-flagged vessel 'KHORYV' which sailed from Eregli, 🇹🇷 to Sulina, 🇷🇴. The incident happened 13 nautical miles off Constanța, right outside of Romanian territorial waters. <br> One of the sailors is dead while three are missing. <br><br> Romanian President Dan blames Russia for this incident and calls it a 'part ‌of ⁠Russia's escalation process in its war in Ukraine' ",
     link: "https://www.reuters.com/world/romania-blames-russia-drone-that-sinks-cargo-ship-1-killed-3-missing-2026-10-23/",
-    country: "KHORYV, Romanian EEZ, Romania 🇷🇴"
+    country: "KHORYV 🇰🇲, Romanian EEZ, Romania 🇷🇴"
    },
 
       {
@@ -4036,6 +4051,67 @@ place: 'others',
     details:  "Two drones entered Romanian airspace. One of those drones was last seen on the radars between Bacău and Vaslui county. So far no drone crashes have been reported",
     link: "https://x.com/MApNRomania/status/2116598630811332944?a=1_B6IaCQQVFYpLafAPg&s=20",
     country: "Bacău County, Romania 🇷🇴"
+   },
+
+   
+   {
+    lat: 45.1096,
+    lng: 29.7263,
+    type: 'vessel',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Vessel attack', // shown in popup
+    date: '13 Nov 2026, 21:40',
+    details:  "The Palau-flagged vessel was on its way towards Ukraine before being hit by drones within Romanian territorial waters, which destroyed the cargo crane. According to the captain there have been no injuries.",
+    link: "https://www.digi24.ro/stiri/actualitate/evenimente/nava-lovita-de-o-drona-in-marea-neagra-la-12-kilometri-de-sfantu-gheorghe-ministrul-apararii-nu-sunt-pierderi-de-vieti-omenesti-4036381",
+    country: "LARISSA 1 🇵🇼, Romanian territorial waters, Romania 🇷🇴"
+   },
+
+   {
+    lat: 45.1096,
+    lng: 29.7263,
+    type: 'vessel',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Vessel attack', // shown in popup
+    date: '14 Nov 2026, 21:10',
+    details:  "The Greek-flagged oil tanker 'Evia Petrol V' was hit by drones shortly after 21:00. A fire broke out which was extinguished by the crew. <br> No casualties were reported",
+    link: "https://www.facebook.com/mapn.ro/posts/1662399092591875?ref=embed_post",
+    country: "EVIA PETROL V 🇬🇷, Romanian territorial waters, Romania 🇷🇴"
+   },
+
+      {
+    lat: 45.0994,
+    lng: 29.7501,
+    type: 'vessel',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Vessel attack', // shown in popup
+    date: '14 Nov 2026, 21:45',
+    details:  "The St. Kitts and Nevis-flagged bulk carrier 'MARSOL' was hit by drones around 21:45. A fire broke out which was extinguished by the crew. <br> No casualties were reported",
+    link: "https://www.facebook.com/mapn.ro/posts/1662399092591875?ref=embed_post",
+    country: "MARSOL 🇰🇳, Romanian territorial waters, Romania 🇷🇴"
+   },
+
+         {
+    lat: 45.33,
+    lng: 29.67,
+    type: 'vessel',      // used for filtering
+    risk: 'yellow',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Vessel attack', // shown in popup
+    date: '14 Nov 2026, night',
+    details:  "The St. Kitts and Nevis-flagged vessel 'ALI NAJAFOV' was hit by drones. A fire broke out which was extinguished by the crew. <br> No casualties were reported",
+    link: "https://www.facebook.com/mapn.ro/posts/1662399092591875?ref=embed_post",
+    country: "ALI NAJAFOV 🇰🇳, Romanian territorial waters, Romania 🇷🇴"
    },
    
  /* =========================
