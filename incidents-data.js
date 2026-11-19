@@ -4055,8 +4055,8 @@ place: 'others',
 
    
    {
-    lat: 45.1096,
-    lng: 29.7263,
+    lat: 44.98,
+    lng: 29.73,
     type: 'vessel',      // used for filtering
     risk: 'yellow',
     place: 'others',
