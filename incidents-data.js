@@ -1608,6 +1608,21 @@ country: "BETUL8 🇸🇴, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Eni Taranto Refinery, Taranto, Italy 🇮🇹"
   },
 
+      {
+    lat: 44.413333,
+    lng: 8.8375,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'airports',
+    year: '2026',
+     month: '11',
+    popupType: 'Drone sighting / airspace closure', // shown in popup
+    date: '19 Nov 2026, 20:10 - shortly after 22:00',
+    details: "The control tower at Genoa airport spotted three drones flying near the runway causing the airspace to be closed. One ITA-Airways flight headed to Rome could not take off.",
+    link: "https://www.ansa.it/liguria/notizie/2026/11/19/droni-sullaeroporto-di-genova-scalo-chiuso-per-due-ore_4c7afe60-b6ad-4fbf-94b6-bea357ac80c3.html",
+    country: "Genoa Airport, Italy 🇮🇹"
+  },
+
     /* =========================
        J E R S E Y
     ========================= */
@@ -3288,7 +3303,53 @@ lng: 3.8275,
     link: "https://wiadomosci.onet.pl/tylko-w-onecie/nad-amerykanska-baza-pojawil-sie-dron-wojsko-zadzwonilo-na-numer-alarmowy-112/0099s50",
     country: "Nowa Pasłęka, Poland 🇵🇱",
   },
-    
+
+   
+      {
+    lat: 50.433333,
+    lng: 22.816667,
+    type: 'drone',      // used for filtering
+    risk: 'red',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Crash site', // shown in popup
+    date: '20 Sep 2026, around 06:30 ',
+    details: "A Russian Kh-101 missile crashed in a field near Nowy Lipowiec, about 200 - 300 meters from the closest buildings, and started burning. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
+    link: "https://wiadomosci.onet.pl/kraj/obiekty-naruszyly-polska-przestrzen-jest-reakcja-msz-ukrainy-relacja-na-zywo/snk07c8",
+    country: "Nowy Lipowiec, Poland 🇵🇱",
+  },
+
+      {
+    lat: 50.44324,
+    lng: 22.24879,
+    type: 'drone',      // used for filtering
+    risk: 'orange',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Crash site', // shown in popup
+    date: '20 Sep 2026, before 7:00 ',
+    details: "A missile crashed in the area of Rudnik nad Sanem. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
+    link: "https://wiadomosci.onet.pl/rzeszow/szkoly-w-rudniku-nad-sanem-odwolaly-lekcje-trwa-akcja-sluzb/wdt9qwv",
+    country: "Rudnik nad Sanem, Poland 🇵🇱",
+  },
+
+         {
+    lat: 50.155556,
+    lng: 22.817778,
+    type: 'drone',      // used for filtering
+    risk: 'orange',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Crash site', // shown in popup
+    date: '20 Sep 2026, around 08:30 ',
+    details: "At around 08:30 police reveived reports of debris scattered in the area of Mołodycz. The object is most likely a drone. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
+    link: "https://wiadomosci.onet.pl/rzeszow/metalowe-elementy-porozrzucane-na-polu-akcja-sluzb-na-podkarpaciu/2tj55w5",
+    country: "Mołodycz, Poland 🇵🇱",
+  },
+   
      /* =========================
        R O M A N I A
     ========================= */
