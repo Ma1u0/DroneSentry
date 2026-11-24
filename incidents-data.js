@@ -1638,21 +1638,6 @@ country: "BETUL8 🇸🇴, Bulgarian EEZ, Bulgaria 🇧🇬",
     country: "Genoa Airport, Italy 🇮🇹"
   },
 
-         {
-    lat: 37.401664,
-    lng: 14.922358,
-    type: 'drone',      // used for filtering
-    risk: 'yellow',
-    place: 'militarybases',
-    year: '2026',
-     month: '11',
-    popupType: 'Drone sighting / airspace closure', // shown in popup
-    date: '20 Nov 2026, 22:40',
-    details: "At 22:40",
-    link: "https://www.rainews.it/articoli/2026/11/allarme-droni-sulla-base-usa-di-sigonella-voli-militari-usa-deviati-14a2b7dd-5cc5-4dfe-985e-5511e175e96e.html",
-    country: "Naval Air Station Sigonella, Italy 🇮🇹"
-  },
-
     /* =========================
        J E R S E Y
     ========================= */
