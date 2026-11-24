@@ -987,6 +987,21 @@ country: "BETUL8 🇸🇴, Bulgarian EEZ, Bulgaria 🇧🇬",
     link: "https://yle.fi/a/74-20244491",
     country: "Pellinki, Finland 🇫🇮"
   },
+
+     {
+    lat: 60.456944,
+    lng: 26.224167,
+    type: 'jet',      // used for filtering
+    risk: 'red',
+    place: 'others',
+    year: '2026',
+     month: '11',
+    popupType: 'Airspace incursion / crash site', // shown in popup
+    date: '21 Nov 2026, 12:34',
+    details: "A Russian helicopter flew into Finnish airspace up to 4.1 kilometers. The incursion is most likely linked to the Ukrainian drone attack on a Russian cargo ship earlier that day.",
+    link: "https://www.dw.com/en/russian-helicopter-suspected-of-violating-finnish-airspace/a-80010133",
+    country: "Loviisa, Finland 🇫🇮"
+  },
      /* =========================
        F R A N C E
     ========================= */
@@ -1621,6 +1636,21 @@ country: "BETUL8 🇸🇴, Bulgarian EEZ, Bulgaria 🇧🇬",
     details: "The control tower at Genoa airport spotted three drones flying near the runway causing the airspace to be closed. One ITA-Airways flight headed to Rome could not take off.",
     link: "https://www.ansa.it/liguria/notizie/2026/11/19/droni-sullaeroporto-di-genova-scalo-chiuso-per-due-ore_4c7afe60-b6ad-4fbf-94b6-bea357ac80c3.html",
     country: "Genoa Airport, Italy 🇮🇹"
+  },
+
+         {
+    lat: 37.401664,
+    lng: 14.922358,
+    type: 'drone',      // used for filtering
+    risk: 'yellow',
+    place: 'militarybases',
+    year: '2026',
+     month: '11',
+    popupType: 'Drone sighting / airspace closure', // shown in popup
+    date: '20 Nov 2026, 22:40',
+    details: "At 22:40",
+    link: "https://www.rainews.it/articoli/2026/11/allarme-droni-sulla-base-usa-di-sigonella-voli-militari-usa-deviati-14a2b7dd-5cc5-4dfe-985e-5511e175e96e.html",
+    country: "Naval Air Station Sigonella, Italy 🇮🇹"
   },
 
     /* =========================
