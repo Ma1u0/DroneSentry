@@ -3324,13 +3324,13 @@ lng: 3.8275,
     lat: 50.44324,
     lng: 22.24879,
     type: 'drone',      // used for filtering
-    risk: 'orange',
+    risk: 'red',
     place: 'others',
     year: '2026',
     month: '11',
     popupType: 'Crash site', // shown in popup
     date: '20 Nov 2026, before 7:00 ',
-    details: "A missile crashed in the area of Rudnik nad Sanem. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
+    details: "A Russian Kh-101 crashed in the area of Rudnik nad Sanem. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
     link: "https://wiadomosci.onet.pl/rzeszow/szkoly-w-rudniku-nad-sanem-odwolaly-lekcje-trwa-akcja-sluzb/wdt9qwv",
     country: "Rudnik nad Sanem, Poland 🇵🇱",
   },
@@ -3339,15 +3339,30 @@ lng: 3.8275,
     lat: 50.155556,
     lng: 22.817778,
     type: 'drone',      // used for filtering
-    risk: 'orange',
+    risk: 'red',
     place: 'others',
     year: '2026',
     month: '11',
     popupType: 'Crash site', // shown in popup
     date: '20 Nov 2026, around 08:30 ',
-    details: "At around 08:30 police reveived reports of debris scattered in the area of Mołodycz. The object is most likely a drone. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
+    details: "At around 08:30 police reveived reports of debris scattered in the area of Mołodycz. The object turned out to be a Russian Kh-101 misisle. No casualties were caused. <br> Polish F-16s and Swedish Gripens were active throughout the night and the control tower at Rzeszów airport was evacuated.",
     link: "https://wiadomosci.onet.pl/rzeszow/metalowe-elementy-porozrzucane-na-polu-akcja-sluzb-na-podkarpaciu/2tj55w5",
     country: "Mołodycz, Poland 🇵🇱",
+  },
+
+            {
+    lat: 51.096389,
+    lng: 23.373333,
+    type: 'drone',      // used for filtering
+    risk: 'red',
+    place: 'others',
+    year: '2026',
+    month: '11',
+    popupType: 'Drone incursion', // shown in popup
+    date: '23 Nov 2026, 23:50 - 23:58 ',
+    details: "At 23:50 a Russian drone flew up to 25 kilometers deep into Polish airspace, coming close to the city of Chełm. The drone flew into Ukrainian airspace after eight minutes. <br> The Polish army was allowed to shoot the drone down but decided against to avoid collateral damage.",
+    link: "https://wiadomosci.wp.pl/mial-dotrzec-az-w-okolice-chelma-nowe-informacje-o-rosyjskim-dronie-7354384486713344a",
+    country: "Ludwinów, Poland 🇵🇱",
   },
    
      /* =========================
